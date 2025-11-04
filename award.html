@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Houseful - Custom Made Furniture</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Houseful Custom-Made Furniture | We make your house a home. Expert craftsmanship and bespoke furniture designs from Sri Lanka.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons & Libraries -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Custom -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* --- Custom Home Tweaks --- */
+    .header-carousel .owl-carousel-item img {
+      height: 65vh;
+      object-fit: cover;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .section-title {
+      color: #5A189A;
+      font-weight: 600;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .cta-banner {
+      background: linear-gradient(to right, #240046, #5A189A);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+    .cta-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =======================
+       NAVBAR (Mobile Offcanvas) — with dropdowns
+  ======================= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm hf-nav px-3 px-lg-4">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" />
+      <!-- brand text only on lg+ -->
+      <span class="hf-brand-wrap d-none d-lg-flex flex-column lh-1">
+        <strong class="hf-brand">HOUSEFUL</strong>
+        <small class="text-muted">We make your house a home</small>
+      </span>
+    </a>
+  
+    <!-- Toggler (offcanvas) -->
+    <button class="navbar-toggler ms-auto" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#hfOffcanvas"
+            aria-controls="hfOffcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Desktop links -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto align-items-lg-center hf-nav-links">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+        <!-- About dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navAbout" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu" aria-labelledby="navAbout">
+            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+            <li><a class="dropdown-item" href="history.html">History</a></li>
+            <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+          
+          </ul>
+        </li>
+  
+        <!-- Projects dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="projects.html" id="navProjects" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu" aria-labelledby="navProjects">
+            <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary ms-lg-3 hf-cta">Get a Quote</a>
+    </div>
+  
+    <!-- Offcanvas (mobile / tablet) -->
+    <div class="offcanvas offcanvas-end hf-offcanvas" tabindex="-1" id="hfOffcanvas" aria-labelledby="hfOffcanvasLabel">
+      <div class="offcanvas-header">
+        <!-- logo only -->
+        <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" id="hfOffcanvasLabel" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="navbar-nav hf-mobile-nav mb-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+          <!-- About dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="mAbout" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mAbout">
+              <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+              <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="household.html" id="mProjects" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mProjects">
+              <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+  
+        <!-- Quick actions -->
+        <div class="mt-auto pt-2 border-top">
+          <a href="contact.html" class="btn btn-primary w-100 mb-2">Get a Quote</a>
+          <div class="d-flex gap-3 small">
+            <a class="text-decoration-none" href="tel:+94777317598"><i class="bi bi-telephone me-1"></i>+94 777 317 598</a>
+            <a class="text-decoration-none" href="mailto:mevancadesilva@gmail.com"><i class="bi bi-envelope me-1"></i>Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    /* ===== Navbar + dropdown polish ===== */
+:root{ --hf-violet:#6a1fb7; --hf-indigo:#4c1d95; }
+
+.hf-nav { min-height: 64px; }
+.hf-logo{ height:46px; width:auto; display:block; }
+@media (max-width:575.98px){ .hf-logo{ height:40px } }
+
+.hf-brand{ font-weight:800; letter-spacing:.2px; }
+
+.hf-nav-links .nav-link{
+  padding:.75rem 1rem; font-weight:600; color:#3b3b3b; position:relative;
+}
+.hf-nav-links .nav-link:hover,.hf-nav-links .nav-link:focus{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active::after,.hf-nav-links .nav-link:hover::after{
+  content:""; position:absolute; left:1rem; right:1rem; bottom:.35rem;
+  height:2px; background:linear-gradient(90deg,var(--hf-indigo),var(--hf-violet)); border-radius:2px;
+}
+
+/* Dropdowns */
+.navbar .dropdown-menu{
+  border-radius:12px; border:1px solid #eee; box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.dropdown-item{ padding:.55rem .9rem; font-weight:600; }
+.dropdown-item:hover{ background:#f6f3ff; color:#381e72; }
+
+/* Show dropdown on hover for lg+ */
+@media (min-width:992px){
+  .nav-item.dropdown:hover .dropdown-menu{ display:block; margin-top:0; }
+}
+
+/* Offcanvas layout */
+.hf-offcanvas{ max-width:320px; border-left:1px solid rgba(0,0,0,.06); }
+.hf-mobile-nav .nav-link{
+  padding:.9rem 0; font-size:1.05rem; font-weight:600; border-bottom:1px solid #f1f1f1;
+}
+.hf-mobile-nav .nav-link:last-child{ border-bottom:none; }
+.hf-mobile-nav .nav-link.active{ color:var(--hf-violet); }
+
+/* Mobile dropdown menus should be full-width and static positioned */
+.dropdown-menu-mobile{
+  position: static; float: none; box-shadow: none; border:0; padding:.25rem 0 .5rem;
+}
+.dropdown-menu-mobile .dropdown-item{ padding:.55rem 0; }
+
+/* Buttons */
+.hf-cta{ font-weight:700; }
+.btn-primary{ background:linear-gradient(135deg,var(--hf-indigo),var(--hf-violet)); border:none; }
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* Controls spacing */
+.navbar-toggler{ border:none; padding:.35rem .5rem; }
+.navbar-toggler:focus{ box-shadow:0 0 0 .15rem rgba(106,31,183,.25); }
+
+  </style>
+
+<!-- ✅ Tight stack: WhatsApp button ABOVE, purple banner BELOW, tiny gap + richer animations -->
+<div class="hf-fab-stack" aria-live="polite">
+  <!-- WhatsApp -->
+  <a class="hf-whatsapp-fab"
+     href="https://wa.me/94777317598?text=Hi%20HOUSEFUL%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20custom%20furniture%20project."
+     target="_blank" rel="noopener" aria-label="Chat with HOUSEFUL on WhatsApp">
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+      <path fill="#fff" d="M19.6 17.5c-.3-.1-1.8-.9-2-.9s-.5-.1-.7.3-.8 1-1 1.2c-.2.2-.4.2-.7.1-1.9-.8-3.1-2.7-3.3-3.1-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.8.6.8.3 1.6.3 2.2.2.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7 0-.2-.2-.2-.5-.3z"/>
+      <path fill="#fff" opacity=".35" d="M16 3.2C9.2 3.2 3.8 8.6 3.8 15.4c0 2.6.9 5 2.3 7l-1.5 5.4 5.6-1.5c1.9 1.2 4.1 1.9 6.6 1.9 6.8 0 12.2-5.4 12.2-12.2S22.8 3.2 16 3.2zm0 22c-2.1 0-4.1-.6-5.7-1.7l-.4-.2-3.3.9.9-3.2-.2-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.6 4.6-10.2 10.2-10.2S26.2 9.8 26.2 15.4 21.6 25.2 16 25.2z"/>
+    </svg>
+  </a>
+
+  <!-- Identity banner (with SL flag PNG/SVG) -->
+  <div class="hf-floating-identity" role="note">
+    <img src="img/LK.svg" alt="Sri Lanka Flag" class="hf-flag">
+    <span>All the creations blend with Sri Lankan identity</span>
+  </div>
+</div>
+
+<style>
+  /* ===== Fixed stack (tight gap) ===== */
+  .hf-fab-stack{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;       /* top item first, then below */
+    align-items: flex-end;
+    gap: 6px;                     /* << smaller gap here */
+    animation: hf-stack-enter .45s ease-out both;
+  }
+  @keyframes hf-stack-enter{
+    from{ transform: translateY(12px); opacity:.0 }
+    to  { transform: translateY(0);    opacity:1 }
+  }
+
+  /* ===== WhatsApp FAB ===== */
+  .hf-whatsapp-fab{
+    width: 56px; height: 56px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #25D366, #128C7E);
+    border: 1px solid rgba(255,255,255,.35);
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    transition: transform .15s ease, box-shadow .25s ease, filter .2s ease;
+    animation: hf-pop .4s ease-out .1s both, hf-float 4.2s ease-in-out 1s infinite;
+  }
+  .hf-whatsapp-fab:hover{
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(0,0,0,.32);
+    filter: saturate(1.05);
+  }
+
+  /* ===== Identity pill ===== */
+  .hf-floating-identity{
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px; color:#fff;
+    background: linear-gradient(135deg, #4c1d95, #a21caf, #4c1d95);
+    background-size: 300% 300%;
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    font-weight: 700; font-size: .95rem; text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    animation: hf-slide-up .55s ease-out .2s both, hf-gradient 8s ease-in-out 1.2s infinite, hf-glow 3s ease-in-out 1.2s infinite;
+  }
+  .hf-floating-identity:hover{ transform: translateY(-1px) }
+
+  .hf-flag{ width:22px; height:auto; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,.25) }
+
+  /* ===== Animations ===== */
+  @keyframes hf-pop{ from{ transform: scale(.9); opacity:.0 } to{ transform: scale(1); opacity:1 } }
+  @keyframes hf-float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-3px) } }
+  @keyframes hf-slide-up{ from{ transform: translateY(10px); opacity:.0 } to{ transform: translateY(0); opacity:1 } }
+  @keyframes hf-gradient{
+    0%,100%{ background-position: 0% 50% }
+    50%    { background-position: 100% 50% }
+  }
+  @keyframes hf-glow{
+    0%,100%{ box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 0 rgba(162,28,175,.12) }
+    50%    { box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 10px rgba(162,28,175,.08) }
+  }
+
+  /* ===== Mobile tweaks ===== */
+  @media (max-width: 575.98px){
+    .hf-fab-stack{ right: 10px; bottom: 10px; gap: 6px; }
+    .hf-whatsapp-fab{ width:52px; height:52px }
+    .hf-floating-identity{ font-size:.86rem; padding:8px 12px }
+    .hf-flag{ width:20px }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .hf-fab-stack, .hf-whatsapp-fab, .hf-floating-identity{ animation: none !important }
+  }
+</style>
+
+<!-- =======================
+     AWARDS & RECOGNITION
+======================= -->
+<section id="awards" class="awards-section" aria-labelledby="awards-title">
+    <div class="awards-container">
+      <header class="awards-header">
+        <p class="awards-kicker">Achievements</p>
+        <h2 id="awards-title" class="awards-title">Awards & Recognition</h2>
+        <p class="awards-intro">
+          Celebrating milestones in Sri Lankan design exhibitions, certification, and press features that reflect
+          a commitment to quality and craftsmanship.
+        </p>
+      </header>
+  
+      <!-- Grid -->
+      <div class="awards-grid">
+        <!-- 1 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/1.jpg" alt="Certificate of Recognition — Living Designs 21, Ceylon Continental Hotel, March 2002" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Living Designs 21 — Recognition</h3>
+            <p class="award-meta">
+              Ceylon Continental Hotel, Colombo · 15–17 March 2002
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/1.jpg","title":"Living Designs 21 — Certificate of Recognition","desc":"Recognition for the Design and Display at Living Designs 21 (Ceylon Continental Hotel, Colombo; 15–17 March 2002)."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+  
+        <!-- 2 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/2.jpg" alt="Certificate of Recognition — Design & Display of an Outdoor Meditation Area, Living Designs 21 (2002)" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Outdoor Meditation Area — Merit</h3>
+            <p class="award-meta">
+              Living Designs 21 · Ceylon Continental Hotel · 2002
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/2.jpg","title":"Outdoor Meditation Area — Living Designs 21","desc":"Certificate of Recognition for the Design and Display of an Outdoor Meditation Area at Living Designs 21 (2002)."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+  
+        <!-- 3 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/3.jpg" alt="Certificate of Recognition — Living Designs ’98, BMICH Colombo, October 1998" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Living Designs ’98 — Recognition</h3>
+            <p class="award-meta">
+              BMICH, Colombo · 24–25 October 1998
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/3.jpg","title":"Living Designs ’98 — Certificate of Recognition","desc":"Recognition for the Design and Display of furniture at Living Designs ’98 (BMICH, Colombo). Special comment: space-saving design."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+  
+        <!-- 4 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/4.jpg" alt="Certificate of Recognition — Living Designs 21, Design & Display of Furniture (2002)" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Living Designs 21 — Furniture Display</h3>
+            <p class="award-meta">
+              Ceylon Continental Hotel · March 2002
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/4.jpg","title":"Living Designs 21 — Furniture Display","desc":"Certificate of Recognition for the Design and Display of Furniture at Living Designs 21 (2002)."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+  
+        <!-- 5 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/5.jpg" alt="Swarna Obeysekera Interior Design Centre — Certificate/Diploma in Interior Design & Decoration" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Interior Design Certification</h3>
+            <p class="award-meta">
+              Swarna Obeysekera Interior Design Centre
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/5.jpg","title":"Interior Design & Decoration — Certification","desc":"Successful completion of Certificate/Diploma course in Interior Design & Decoration at the Swarna Obeysekera Interior Design Centre."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+  
+        <!-- 6 -->
+        <figure class="award-card reveal" tabindex="0">
+          <img src="award/6.jpg" alt="Press feature — Why ready-made? Get custom made (McAD Interiors) — newspaper article" />
+          <figcaption class="award-info">
+            <h3 class="award-title">Press Feature — “Get Custom Made”</h3>
+            <p class="award-meta">
+              Newspaper article · Craft & space-saving design
+            </p>
+            <button class="award-view"
+                    data-award='{"src":"award/6.jpg","title":"Press — Why ready-made? Get custom made","desc":"Newspaper feature highlighting craftsmanship, custom furniture, and modern space-saving techniques."}'>
+              View
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  
+    <!-- Lightbox -->
+    <div class="award-lightbox" id="awardLightbox" aria-hidden="true">
+      <div class="award-lightbox-backdrop" data-close></div>
+      <div class="award-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="awardLightboxTitle">
+        <button class="award-lightbox-close" aria-label="Close" data-close>&times;</button>
+        <img id="awardLightboxImg" src="" alt="" />
+        <div class="award-lightbox-caption">
+          <h3 id="awardLightboxTitle"></h3>
+          <p id="awardLightboxDesc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* =======================
+   Awards styles
+======================= */
+:root{
+  --aw-indigo:#4c1d95;
+  --aw-magenta:#a21caf;
+  --aw-ink:#1b1324;
+  --aw-text:#524a5d;
+  --aw-soft:#f8f5ff;
+  --aw-card:#ffffff;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --aw-card:#17151c;
+    --aw-soft:#120f1a;
+    --aw-text:#dcd5e8;
+  }
+}
+
+.awards-section{
+  position:relative;
+  padding:56px 16px;
+  background:
+    radial-gradient(1200px 1200px at 110% 110%, rgba(162,28,175,.06), transparent 45%),
+    radial-gradient(1000px 1000px at -10% -10%, rgba(76,29,149,.06), transparent 45%);
+  isolation:isolate;
+}
+
+.awards-container{ max-width:1120px; margin:0 auto; }
+
+.awards-header{ text-align:center; margin-bottom:22px; }
+.awards-kicker{
+  text-transform:uppercase; letter-spacing:.18em; font-weight:800;
+  color:var(--aw-magenta); margin:0 0 .25rem; font-size:.9rem;
+}
+.awards-title{
+  font-weight:900; color:var(--aw-ink);
+  font-size:clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
+  margin:0 0 .35rem;
+}
+.awards-intro{ color:#000000; max-width:780px; margin:0 auto; line-height:1.55; }
+
+/* Grid (mobile-first) */
+.awards-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  margin-top:18px;
+}
+@media (min-width:768px){
+  .awards-grid{ grid-template-columns:repeat(2,1fr); gap:18px; }
+}
+@media (min-width:1200px){
+  .awards-grid{ grid-template-columns:repeat(3,1fr); }
+}
+
+/* Cards */
+.award-card{
+  background:var(--aw-card);
+  border:1px solid #ece9f6;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  transition:transform .18s ease, box-shadow .2s ease, border-color .2s ease;
+  outline:none;
+}
+.award-card img{
+  width:100%; height:220px; object-fit:cover; display:block;
+}
+@media (min-width:576px){ .award-card img{ height:240px; } }
+@media (min-width:992px){ .award-card img{ height:260px; } }
+
+.award-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 36px rgba(0,0,0,.12);
+}
+
+.award-info{ padding:14px 14px 16px; }
+.award-title{ margin:0 0 .25rem; font-weight:800; color:#fff; font-size:1.05rem; }
+.award-meta{ margin:0 0 .5rem; color:var(--aw-text); font-size:.95rem; }
+
+.award-view{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 12px; border-radius:10px; font-weight:700; border:0;
+  background:linear-gradient(135deg, var(--aw-indigo), var(--aw-magenta)); color:#fff;
+  box-shadow:0 8px 18px rgba(76,29,149,.25);
+  transition:transform .15s ease, filter .15s ease;
+}
+.award-view:hover{ transform:translateY(-1px); filter:brightness(1.05); }
+
+/* Reveal animation */
+.reveal{ opacity:0; transform:translateY(14px) scale(.98); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in-view{ opacity:1; transform:none; }
+
+/* Lightbox */
+.award-lightbox{
+  position:fixed; inset:0; display:none; z-index:11000;
+}
+.award-lightbox[aria-hidden="false"]{ display:block; }
+
+.award-lightbox-backdrop{
+  position:absolute; inset:0; background:rgba(0,0,0,.6);
+  backdrop-filter:blur(2px);
+}
+
+.award-lightbox-dialog{
+  position:absolute; inset: 6% 4% auto 4%;
+  background:var(--aw-card); border-radius:16px; overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+  animation:lb-pop .28s ease-out;
+}
+@keyframes lb-pop{
+  from{ transform:translateY(8px) scale(.98); opacity:.6; }
+  to{ transform:none; opacity:1; }
+}
+
+.award-lightbox-close{
+  position:absolute; top:8px; right:10px;
+  width:36px; height:36px; border-radius:50%; border:0;
+  background:#ffffff22; color:#fff; font-size:28px; line-height:1;
+  display:grid; place-items:center; cursor:pointer;
+}
+.award-lightbox img{
+  width:100%; height:auto; max-height:60vh; object-fit:contain; background:#000;
+}
+.award-lightbox-caption{
+  padding:12px 14px 16px; color:var(--aw-text);
+}
+.award-lightbox-caption h3{ margin:.25rem 0 .35rem; color:var(--aw-ink); }
+.award-lightbox-caption p{ margin:0; line-height:1.55; }
+
+/* Larger screens center the dialog */
+@media (min-width:992px){
+  .award-lightbox-dialog{
+    inset: 8% auto auto 50%;
+    transform: translateX(-50%);
+    width:min(900px, 86vw);
+  }
+}
+
+  </style>
+
+<script>
+    // =======================
+// Awards interactions
+// - Scroll reveal (IntersectionObserver)
+// - Lightbox viewer (open/close; ESC; backdrop click)
+// =======================
+(function(){
+  // Reveal on scroll
+  const items = document.querySelectorAll('#awards .reveal');
+  if ('IntersectionObserver' in window && items.length){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -10% 0px'});
+    items.forEach(el => io.observe(el));
+  } else {
+    items.forEach(el => el.classList.add('in-view'));
+  }
+
+  // Lightbox
+  const lightbox   = document.getElementById('awardLightbox');
+  const imgEl      = document.getElementById('awardLightboxImg');
+  const titleEl    = document.getElementById('awardLightboxTitle');
+  const descEl     = document.getElementById('awardLightboxDesc');
+
+  function openLightbox(data){
+    imgEl.src = data.src;
+    imgEl.alt = data.title || '';
+    titleEl.textContent = data.title || 'Award';
+    descEl.textContent = data.desc || '';
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox(){
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    imgEl.src = '';
+  }
+
+  document.querySelectorAll('.award-view').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      try{
+        const data = JSON.parse(btn.getAttribute('data-award') || '{}');
+        openLightbox(data);
+      }catch(e){ /* no-op */ }
+    });
+  });
+
+  lightbox.addEventListener('click', (e)=>{
+    if (e.target.hasAttribute('data-close')) closeLightbox();
+  });
+  document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Escape' && lightbox.getAttribute('aria-hidden') === 'false'){
+      closeLightbox();
+    }
+  });
+})();
+
+</script>
+
+<!-- =======================
+     MEDIA & TV FEATURES
+======================= -->
+<section id="media" class="media-section" aria-labelledby="media-title">
+  <div class="media-container">
+    <header class="media-header">
+      <p class="media-kicker">In the Media</p>
+      <h2 id="media-title" class="media-title">TV Programs & YouTube Features</h2>
+      <p class="media-intro">
+        Our work has been featured on national TV programs and digital channels, highlighting
+        bespoke craftsmanship, space-saving innovation, and timeless Sri Lankan design. Explore a
+        selection of interviews, project spotlights, and behind-the-scenes stories below.
+      </p>
+    </header>
+
+    <!-- Video Grid -->
+    <div class="media-grid">
+      <!-- Card 1 -->
+      <article class="media-card" data-yt="R2X6g9GO1Y8">
+        <div class="media-thumb">
+          <img alt="TV Program Feature 1 thumbnail" loading="lazy">
+          <button class="media-play" aria-label="Play video">
+            <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <h3 class="media-name">TV Program Feature 01</h3>
+        <p class="media-caption">Craftsmanship spotlight & brand story.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="media-card" data-yt="aHz5AY0Wj2c">
+        <div class="media-thumb">
+          <img alt="TV Program Feature 2 thumbnail" loading="lazy">
+          <button class="media-play" aria-label="Play video">
+            <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <h3 class="media-name">TV Program Feature 02</h3>
+        <p class="media-caption">Space-saving furniture innovations.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="media-card" data-yt="YvPTDuUX5gw">
+        <div class="media-thumb">
+          <img alt="TV Program Feature 3 thumbnail" loading="lazy">
+          <button class="media-play" aria-label="Play video">
+            <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <h3 class="media-name">TV Program Feature 03</h3>
+        <p class="media-caption">Client stories & project outcomes.</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="media-card" data-yt="6Nlh_APhwz0">
+        <div class="media-thumb">
+          <img alt="TV Program Feature 4 thumbnail" loading="lazy">
+          <button class="media-play" aria-label="Play video">
+            <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <h3 class="media-name">TV Program Feature 04</h3>
+        <p class="media-caption">Design process & material choices.</p>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="media-card" data-yt="AuW2GhdAfRw">
+        <div class="media-thumb">
+          <img alt="TV Program Feature 5 thumbnail" loading="lazy">
+          <button class="media-play" aria-label="Play video">
+            <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <h3 class="media-name">TV Program Feature 05</h3>
+        <p class="media-caption">Sustainability & long-lasting quality.</p>
+      </article>
+    </div>
+
+
+  <!-- Video Modal -->
+  <div class="media-modal" id="mediaModal" aria-hidden="true">
+    <div class="media-modal-backdrop" data-close></div>
+    <div class="media-modal-dialog" role="dialog" aria-modal="true" aria-label="YouTube video">
+      <button class="media-modal-close" data-close aria-label="Close">&times;</button>
+      <div class="media-iframe-wrap">
+        <iframe id="mediaFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* =======================
+   Media & TV section
+======================= */
+:root{
+  --md-indigo:#4c1d95;
+  --md-violet:#6a1fb7;
+  --md-ink:#1b1324;
+  --md-soft:#f8f5ff;
+}
+
+.media-section{
+  padding:56px 16px;
+  background:
+    radial-gradient(1200px 1200px at -10% -10%, rgba(106,31,183,.06), transparent 45%),
+    radial-gradient(1200px 1200px at 110% 110%, rgba(76,29,149,.06), transparent 45%);
+}
+.media-container{ max-width:1120px; margin:0 auto; }
+
+.media-header{ text-align:center; margin-bottom:20px; }
+.media-kicker{
+  text-transform:uppercase; letter-spacing:.18em; font-weight:800; color:#a21caf; margin:0 0 .3rem;
+}
+.media-title{
+  font-weight:900; color:var(--md-ink);
+  font-size:clamp(1.8rem,2.2vw + 1rem,2.6rem); margin:0 0 .4rem;
+}
+.media-intro{ max-width:780px; margin:0 auto; line-height:1.6; }
+
+/* Grid */
+.media-grid{
+  display:grid; gap:14px; margin-top:18px;
+  grid-template-columns:1fr;
+}
+@media (min-width:640px){ .media-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:992px){ .media-grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* Cards */
+.media-card{
+  background:#fff; border:1px solid #ece9f6; border-radius:14px; overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.06); transition:transform .18s ease, box-shadow .2s ease;
+}
+.media-card:hover{ transform:translateY(-4px); box-shadow:0 16px 36px rgba(0,0,0,.12); }
+.media-thumb{ position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; }
+.media-thumb img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(.95); }
+.media-play{
+  position:absolute; inset:auto auto 10px 10px; z-index:2; border:0; border-radius:10px;
+  background:linear-gradient(135deg,var(--md-indigo),var(--md-violet)); color:#fff;
+  padding:8px 12px; font-weight:700; display:flex; align-items:center; gap:.4rem;
+  box-shadow:0 8px 18px rgba(76,29,149,.25);
+}
+.media-play i{ font-size:1.2rem; }
+.media-name{ font-size:1.05rem; font-weight:800; padding:12px 12px 4px; margin:0; color:#ffffff; }
+.media-caption{ padding:0 12px 14px; margin:0; color:#524a5d; }
+
+/* Satisfaction widget */
+.media-rate{
+  margin-top:22px; display:flex; gap:16px; align-items:center; justify-content:space-between;
+  background:#fff; border:1px solid #ece9f6; border-radius:14px; padding:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+.media-rate-left{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.media-rate-actions{ display:flex; gap:8px; }
+.rate-btn{
+  border:0; padding:8px 12px; border-radius:10px; font-weight:700; color:#fff;
+  background:linear-gradient(135deg,var(--md-indigo),var(--md-violet)); display:flex; align-items:center; gap:.4rem;
+}
+.rate-btn[disabled]{ opacity:.6; cursor:not-allowed; }
+
+.media-rate-right{ min-width:230px; flex:1; max-width:420px; }
+.media-meter{ width:100%; height:10px; background:#eee7ff; border-radius:999px; overflow:hidden; }
+.media-meter span{ display:block; height:100%; background:linear-gradient(90deg,var(--md-indigo),var(--md-violet)); }
+.media-meter-label{ display:flex; justify-content:flex-end; font-weight:800; margin-bottom:6px; color:#1b1324; }
+.media-rate-note{ font-size:.9rem; color:#666; margin-top:6px; }
+
+/* Modal */
+.media-modal{ position:fixed; inset:0; display:none; z-index:11010; }
+.media-modal[aria-hidden="false"]{ display:block; }
+.media-modal-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.6); backdrop-filter:blur(2px); }
+.media-modal-dialog{
+  position:absolute; inset:6% 4% auto 4%; background:#000; border-radius:16px;
+  box-shadow:0 20px 60px rgba(0,0,0,.45); overflow:hidden; animation:md-pop .25s ease-out;
+}
+@keyframes md-pop{ from{ transform:translateY(6px) scale(.98); opacity:.6 } to{ transform:none; opacity:1 } }
+.media-modal-close{
+  position:absolute; top:8px; right:10px; width:36px; height:36px; border-radius:50%; border:0;
+  background:#ffffff22; color:#fff; font-size:28px; display:grid; place-items:center; z-index:2;
+}
+.media-iframe-wrap{ position:relative; aspect-ratio:16/9; width:100%; }
+.media-iframe-wrap iframe{ position:absolute; inset:0; width:100%; height:100%; }
+
+/* Larger screens center */
+@media (min-width:992px){
+  .media-modal-dialog{ inset:8% auto auto 50%; transform:translateX(-50%); width:min(960px,86vw); }
+}
+
+/* Dark mode polish */
+@media (prefers-color-scheme: dark){
+  .media-card, .media-rate{ background:#17151c; border-color:#2b2435; }
+  .media-caption, .media-rate-note{ color:#cfc6dc; }
+  .media-meter{ background:#2e2149; }
+}
+
+</style>
+
+<script>
+
+/* =======================
+   Media & TV – YouTube grid
+======================= */
+(function(){
+  // Build thumbnails from data-yt (hqdefault)
+  document.querySelectorAll('.media-card[data-yt]').forEach(card => {
+    const id = card.getAttribute('data-yt');
+    const img = card.querySelector('img');
+    img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  });
+
+  // Modal open/close
+  const modal  = document.getElementById('mediaModal');
+  const frame  = document.getElementById('mediaFrame');
+
+  function openVideo(id){
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    // autoplay=1 & modestbranding
+    frame.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+  }
+  function closeVideo(){
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    frame.src = ''; // stop playback
+  }
+
+  document.querySelectorAll('.media-card .media-play').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.closest('.media-card').getAttribute('data-yt');
+      openVideo(id);
+    });
+  });
+  modal.addEventListener('click', e => { if (e.target.hasAttribute('data-close')) closeVideo(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeVideo();
+  });
+
+  /* =======================
+     Satisfaction widget
+  ======================= */
+  const STORE_KEY = 'hf-media-rate';
+  const elRate = document.getElementById('mediaRate');
+  if (elRate){
+    // Initial values (fallback), e.g., 96% based on 250 votes
+    let up = 240, down = 10;
+
+    // Load stored totals (optional simple persistence)
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+      if (saved && typeof saved.up === 'number' && typeof saved.down === 'number'){
+        up = saved.up; down = saved.down;
+      }
+    } catch(e){}
+
+    const bar  = document.getElementById('mediaBar');
+    const score = document.getElementById('mediaScore');
+    const note = document.getElementById('mediaNote');
+
+    function render(){
+      const total = Math.max(1, up + down);
+      const pct = Math.round((up / total) * 100);
+      bar.style.width = pct + '%';
+      score.textContent = pct + '%';
+    }
+    render();
+
+    // Voting
+    const voted = localStorage.getItem(STORE_KEY + ':voted');
+    if (voted) {
+      elRate.querySelectorAll('.rate-btn').forEach(b => b.setAttribute('disabled',''));
+      note.textContent = 'Thanks! Your response was recorded.';
+    }
+
+    elRate.addEventListener('click', e => {
+      const btn = e.target.closest('.rate-btn');
+      if (!btn || localStorage.getItem(STORE_KEY + ':voted')) return;
+
+      if (btn.dataset.vote === 'up') up++; else down++;
+      localStorage.setItem(STORE_KEY, JSON.stringify({up, down}));
+      localStorage.setItem(STORE_KEY + ':voted', '1');
+      elRate.querySelectorAll('.rate-btn').forEach(b => b.setAttribute('disabled',''));
+      note.textContent = 'Thanks! Your response was recorded.';
+      render();
+    });
+  }
+})();
+</script>
+
+
+   <!-- Footer -->
+  <!-- Footer -->
+<footer class="hf-footer container-fluid px-0">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Brand / About -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="logo.png" alt="HOUSEFUL" class="logo me-2">
+            <div class="fw-bold fs-5">HOUSEFUL</div>
+          </div>
+          <p class="mb-2">We make your house a home. Custom-made furniture crafted in Sri Lanka.</p>
+          <div class="social mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-2">
+          <div class="title">Quick Links</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Collections -->
+        <div class="col-6 col-md-3">
+          <div class="title">Collections</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-3">
+          <div class="title">Contact</div>
+          <ul class="list-unstyled mb-3">
+            <li><i class="fa fa-map-marker-alt me-2"></i>93/4 Weera Uditha Mawatha, Hadigama, Piliyandala</li>
+            <li><a href="tel:+94777317598"><i class="fa fa-phone-alt me-2"></i>+94 777 317 598</a></li>
+            <li><a href="mailto:mevancadesilva@gmail.com"><i class="fa fa-envelope me-2"></i>mevancadesilva@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hf-copy text-center">
+      © 2025 HOUSEFUL Custom-Made Furniture · Designed by Quantum Leap Solutions
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+
+<style>
+  /* ---- HOUSEFUL Footer ---- */
+.hf-footer {
+  background: linear-gradient(90deg, #240046 0%, #5A189A 100%);
+  color: #fff;
+  border-radius: 14px 14px 0 0;
+  margin-top: 60px;
+}
+
+.hf-footer a {
+  color: #E9D8FD;
+  text-decoration: none;
+}
+.hf-footer a:hover { color: #ffffff; text-decoration: underline; }
+
+.hf-footer .title {
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 1rem;
+}
+
+.hf-footer .logo {
+  height: 46px;
+  width: auto;
+}
+
+.hf-footer .social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(255,255,255,.1);
+  margin-right: .4rem;
+}
+.hf-footer .social a:hover { background: rgba(255,255,255,.2); }
+
+.hf-copy {
+  background:#1e1e1e; color:#cfcfcf; font-size:.95rem;
+  padding: .9rem 0;
+}
+</style>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $('.header-carousel').owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      items: 1,
+      dots: true,
+      loop: true
+    });
+  </script>
+</body>
+</html>

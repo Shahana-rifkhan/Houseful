@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Houseful - Custom Made Furniture</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Houseful Custom-Made Furniture | We make your house a home. Expert craftsmanship and bespoke furniture designs from Sri Lanka.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons & Libraries -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Custom -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* --- Custom Home Tweaks --- */
+    .header-carousel .owl-carousel-item img {
+      height: 65vh;
+      object-fit: cover;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .section-title {
+      color: #5A189A;
+      font-weight: 600;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .cta-banner {
+      background: linear-gradient(to right, #240046, #5A189A);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+    .cta-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =======================
+       NAVBAR (Mobile Offcanvas) — with dropdowns
+  ======================= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm hf-nav px-3 px-lg-4">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" />
+      <!-- brand text only on lg+ -->
+      <span class="hf-brand-wrap d-none d-lg-flex flex-column lh-1">
+        <strong class="hf-brand">HOUSEFUL</strong>
+        <small class="text-muted">We make your house a home</small>
+      </span>
+    </a>
+  
+    <!-- Toggler (offcanvas) -->
+    <button class="navbar-toggler ms-auto" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#hfOffcanvas"
+            aria-controls="hfOffcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Desktop links -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto align-items-lg-center hf-nav-links">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+        <!-- About dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navAbout" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu" aria-labelledby="navAbout">
+            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+            <li><a class="dropdown-item" href="history.html">History</a></li>
+            <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+          
+          </ul>
+        </li>
+  
+        <!-- Projects dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="projects.html" id="navProjects" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu" aria-labelledby="navProjects">
+            <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary ms-lg-3 hf-cta">Get a Quote</a>
+    </div>
+  
+    <!-- Offcanvas (mobile / tablet) -->
+    <div class="offcanvas offcanvas-end hf-offcanvas" tabindex="-1" id="hfOffcanvas" aria-labelledby="hfOffcanvasLabel">
+      <div class="offcanvas-header">
+        <!-- logo only -->
+        <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" id="hfOffcanvasLabel" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="navbar-nav hf-mobile-nav mb-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+          <!-- About dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="mAbout" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mAbout">
+              <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+              <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="household.html" id="mProjects" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mProjects">
+              <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+  
+        <!-- Quick actions -->
+        <div class="mt-auto pt-2 border-top">
+          <a href="contact.html" class="btn btn-primary w-100 mb-2">Get a Quote</a>
+          <div class="d-flex gap-3 small">
+            <a class="text-decoration-none" href="tel:+94777317598"><i class="bi bi-telephone me-1"></i>+94 777 317 598</a>
+            <a class="text-decoration-none" href="mailto:mevancadesilva@gmail.com"><i class="bi bi-envelope me-1"></i>Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    /* ===== Navbar + dropdown polish ===== */
+:root{ --hf-violet:#6a1fb7; --hf-indigo:#4c1d95; }
+
+.hf-nav { min-height: 64px; }
+.hf-logo{ height:46px; width:auto; display:block; }
+@media (max-width:575.98px){ .hf-logo{ height:40px } }
+
+.hf-brand{ font-weight:800; letter-spacing:.2px; }
+
+.hf-nav-links .nav-link{
+  padding:.75rem 1rem; font-weight:600; color:#3b3b3b; position:relative;
+}
+.hf-nav-links .nav-link:hover,.hf-nav-links .nav-link:focus{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active::after,.hf-nav-links .nav-link:hover::after{
+  content:""; position:absolute; left:1rem; right:1rem; bottom:.35rem;
+  height:2px; background:linear-gradient(90deg,var(--hf-indigo),var(--hf-violet)); border-radius:2px;
+}
+
+/* Dropdowns */
+.navbar .dropdown-menu{
+  border-radius:12px; border:1px solid #eee; box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.dropdown-item{ padding:.55rem .9rem; font-weight:600; }
+.dropdown-item:hover{ background:#f6f3ff; color:#381e72; }
+
+/* Show dropdown on hover for lg+ */
+@media (min-width:992px){
+  .nav-item.dropdown:hover .dropdown-menu{ display:block; margin-top:0; }
+}
+
+/* Offcanvas layout */
+.hf-offcanvas{ max-width:320px; border-left:1px solid rgba(0,0,0,.06); }
+.hf-mobile-nav .nav-link{
+  padding:.9rem 0; font-size:1.05rem; font-weight:600; border-bottom:1px solid #f1f1f1;
+}
+.hf-mobile-nav .nav-link:last-child{ border-bottom:none; }
+.hf-mobile-nav .nav-link.active{ color:var(--hf-violet); }
+
+/* Mobile dropdown menus should be full-width and static positioned */
+.dropdown-menu-mobile{
+  position: static; float: none; box-shadow: none; border:0; padding:.25rem 0 .5rem;
+}
+.dropdown-menu-mobile .dropdown-item{ padding:.55rem 0; }
+
+/* Buttons */
+.hf-cta{ font-weight:700; }
+.btn-primary{ background:linear-gradient(135deg,var(--hf-indigo),var(--hf-violet)); border:none; }
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* Controls spacing */
+.navbar-toggler{ border:none; padding:.35rem .5rem; }
+.navbar-toggler:focus{ box-shadow:0 0 0 .15rem rgba(106,31,183,.25); }
+
+  </style>
+
+<!-- ✅ Tight stack: WhatsApp button ABOVE, purple banner BELOW, tiny gap + richer animations -->
+<div class="hf-fab-stack" aria-live="polite">
+  <!-- WhatsApp -->
+  <a class="hf-whatsapp-fab"
+     href="https://wa.me/94777317598?text=Hi%20HOUSEFUL%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20custom%20furniture%20project."
+     target="_blank" rel="noopener" aria-label="Chat with HOUSEFUL on WhatsApp">
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+      <path fill="#fff" d="M19.6 17.5c-.3-.1-1.8-.9-2-.9s-.5-.1-.7.3-.8 1-1 1.2c-.2.2-.4.2-.7.1-1.9-.8-3.1-2.7-3.3-3.1-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.8.6.8.3 1.6.3 2.2.2.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7 0-.2-.2-.2-.5-.3z"/>
+      <path fill="#fff" opacity=".35" d="M16 3.2C9.2 3.2 3.8 8.6 3.8 15.4c0 2.6.9 5 2.3 7l-1.5 5.4 5.6-1.5c1.9 1.2 4.1 1.9 6.6 1.9 6.8 0 12.2-5.4 12.2-12.2S22.8 3.2 16 3.2zm0 22c-2.1 0-4.1-.6-5.7-1.7l-.4-.2-3.3.9.9-3.2-.2-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.6 4.6-10.2 10.2-10.2S26.2 9.8 26.2 15.4 21.6 25.2 16 25.2z"/>
+    </svg>
+  </a>
+
+  <!-- Identity banner (with SL flag PNG/SVG) -->
+  <div class="hf-floating-identity" role="note">
+    <img src="img/LK.svg" alt="Sri Lanka Flag" class="hf-flag">
+    <span>All the creations blend with Sri Lankan identity</span>
+  </div>
+</div>
+
+<style>
+  /* ===== Fixed stack (tight gap) ===== */
+  .hf-fab-stack{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;       /* top item first, then below */
+    align-items: flex-end;
+    gap: 6px;                     /* << smaller gap here */
+    animation: hf-stack-enter .45s ease-out both;
+  }
+  @keyframes hf-stack-enter{
+    from{ transform: translateY(12px); opacity:.0 }
+    to  { transform: translateY(0);    opacity:1 }
+  }
+
+  /* ===== WhatsApp FAB ===== */
+  .hf-whatsapp-fab{
+    width: 56px; height: 56px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #25D366, #128C7E);
+    border: 1px solid rgba(255,255,255,.35);
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    transition: transform .15s ease, box-shadow .25s ease, filter .2s ease;
+    animation: hf-pop .4s ease-out .1s both, hf-float 4.2s ease-in-out 1s infinite;
+  }
+  .hf-whatsapp-fab:hover{
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(0,0,0,.32);
+    filter: saturate(1.05);
+  }
+
+  /* ===== Identity pill ===== */
+  .hf-floating-identity{
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px; color:#fff;
+    background: linear-gradient(135deg, #4c1d95, #a21caf, #4c1d95);
+    background-size: 300% 300%;
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    font-weight: 700; font-size: .95rem; text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    animation: hf-slide-up .55s ease-out .2s both, hf-gradient 8s ease-in-out 1.2s infinite, hf-glow 3s ease-in-out 1.2s infinite;
+  }
+  .hf-floating-identity:hover{ transform: translateY(-1px) }
+
+  .hf-flag{ width:22px; height:auto; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,.25) }
+
+  /* ===== Animations ===== */
+  @keyframes hf-pop{ from{ transform: scale(.9); opacity:.0 } to{ transform: scale(1); opacity:1 } }
+  @keyframes hf-float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-3px) } }
+  @keyframes hf-slide-up{ from{ transform: translateY(10px); opacity:.0 } to{ transform: translateY(0); opacity:1 } }
+  @keyframes hf-gradient{
+    0%,100%{ background-position: 0% 50% }
+    50%    { background-position: 100% 50% }
+  }
+  @keyframes hf-glow{
+    0%,100%{ box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 0 rgba(162,28,175,.12) }
+    50%    { box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 10px rgba(162,28,175,.08) }
+  }
+
+  /* ===== Mobile tweaks ===== */
+  @media (max-width: 575.98px){
+    .hf-fab-stack{ right: 10px; bottom: 10px; gap: 6px; }
+    .hf-whatsapp-fab{ width:52px; height:52px }
+    .hf-floating-identity{ font-size:.86rem; padding:8px 12px }
+    .hf-flag{ width:20px }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .hf-fab-stack, .hf-whatsapp-fab, .hf-floating-identity{ animation: none !important }
+  }
+</style>
+
+<!-- =======================
+     REFURBISHING & RENOVATIONS
+======================= -->
+<section class="container py-5" id="renovations">
+    <div class="text-center mb-5">
+      <h4 class="hf-section-eyebrow">Refurbishing & Renovations</h4>
+      <h2 class="hf-section-title">See the Difference — Before & After</h2>
+      <p class="text-muted mx-auto" style="max-width:720px">
+        Drag the handle (or use the arrow keys) to compare our refurbishment work.
+      </p>
+    </div>
+  
+    <!-- Grid (4 comparisons) -->
+    <div class="row g-4">
+      <!-- #1 Dining Suite -->
+      <div class="col-md-6">
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <img class="ba-img ba-before" src="before/1.2.jpg" alt="Dining suite before refurbishment" loading="lazy">
+          <img class="ba-img ba-after"  src="before/1.1.jpg" alt="Dining suite after refurbishment"  loading="lazy">
+          <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Before after slider: Dining suite">
+          <div class="ba-label ba-label-left"></div>
+          <div class="ba-label ba-label-right"></div>
+        </div>
+        <h5 class="mt-3 fw-bold">Classic Dining Suite Restoration</h5>
+      </div>
+  
+      <!-- #2 Bullock Cart (heritage) -->
+      <div class="col-md-6">
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <img class="ba-img ba-before" src="before/2.2.jpg" alt="Bullock cart before restoration" loading="lazy">
+          <img class="ba-img ba-after"  src="before/2.1.jpg" alt="Bullock cart after restoration"  loading="lazy">
+          <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+          <input class="ba-range" type="range" min="0" max="100" value="52" aria-label="Before after slider: Heritage cart">
+          <div class="ba-label ba-label-left"></div>
+          <div class="ba-label ba-label-right"></div>
+        </div>
+        <h5 class="mt-3 fw-bold">Heritage Bullock Cart Restoration</h5>
+      </div>
+  
+      
+  
+      <!-- #4 Sofa Set -->
+      <div class="col-md-6">
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <img class="ba-img ba-before" src="before/4.2.jpg" alt="Sofa set before refurbishment" loading="lazy">
+          <img class="ba-img ba-after"  src="before/4.1.jpg" alt="Sofa set after refurbishment"  loading="lazy">
+          <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+          <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Sofa set">
+          <div class="ba-label ba-label-left"></div>
+          <div class="ba-label ba-label-right"></div>
+        </div>
+        <h5 class="mt-3 fw-bold">Chesterfield-Style Sofa Revival</h5>
+      </div>
+    </div> 
+
+    <!-- #6 Antique Coffer on Stand -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/6.2.jpg" alt="Antique coffer before restoration" loading="lazy">
+    <img class="ba-img ba-after"  src="before/6.1.jpg" alt="Antique coffer after restoration with brass fittings" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Antique coffer">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Antique Coffer Restoration</h5>
+</div>
+</div>
+
+<!-- #7 Cane Settee (workshop → finished) -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/7.2.jpg" alt="Cane settee during reweaving in workshop" loading="lazy">
+    <img class="ba-img ba-after"  src="before/7.1.jpg" alt="Cane settee fully finished with cushions" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Cane settee">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Cane Settee Reweave & Upholstery</h5>
+</div>
+
+<!-- #8 Mid-century Two-Seater (raw → with cushion) -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/8.2.jpg" alt="Two-seater cane sofa before seat cushion" loading="lazy">
+    <img class="ba-img ba-after"  src="before/8.1.jpg" alt="Two-seater cane sofa after with striped cushion" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Mid-century two-seater">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Two-Seater Refresh</h5>
+</div>
+
+<!-- #9 Long Settee (aged → refinished & upholstered) -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/9.2.jpg" alt="Long cane settee before restoration" loading="lazy">
+    <img class="ba-img ba-after"  src="before/9.1.jpg" alt="Long cane settee after with new upholstery" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Long settee">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Long Settee Refinish</h5>
+</div>
+
+<!-- #10 Curved Settee + Chairs (set refresh) -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/10.2.jpg" alt="Curved cane settee set before restoration" loading="lazy">
+    <img class="ba-img ba-after"  src="before/10.1.jpg" alt="Curved cane settee set after restoration" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Curved cane settee set">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Curved Settee Set Restoration</h5>
+</div>
+
+<!-- #11 Under Stair Cabinet + TV Unit -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/11.2.jpg" alt="Under stair cabinet and TV area before renovation" loading="lazy">
+    <img class="ba-img ba-after"  src="before/11.1.jpg" alt="Under stair cabinet and TV area after renovation" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Under stair cabinet and TV area">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Under Stair Cabinet + TV Unit</h5>
+</div>
+
+<!-- #12 Wooden Door Refinishing -->
+<div class="col-md-6">
+  <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+    <img class="ba-img ba-before" src="before/12.2.jpg" alt="Wooden door before refinishing" loading="lazy">
+    <img class="ba-img ba-after"  src="before/12.1.jpg" alt="Wooden door after refinishing" loading="lazy">
+    <div class="ba-handle" aria-hidden="true"><span class="ba-dot"></span></div>
+    <input class="ba-range" type="range" min="0" max="100" value="48" aria-label="Before after slider: Wooden door refinishing">
+    <div class="ba-label ba-label-left"></div>
+    <div class="ba-label ba-label-right"></div>
+  </div>
+  <h5 class="mt-3 fw-bold">Wooden Door Refinishing</h5>
+</div>
+
+
+      
+</section>
+  
+  <style>
+    .hf-section-title{
+        color:#000000;
+    }
+/* ---------- Better before/after UX ---------- */
+.ba-compare{
+  position:relative; overflow:hidden; border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
+  background:#111;
+  user-select:none; -webkit-user-select:none; touch-action:none;
+}
+.ba-img{ width:100%; height:420px; object-fit:cover; display:block }
+@media (max-width: 576px){ .ba-img{ height:320px } }
+
+/* the after image sits on top and is clipped by the divider */
+.ba-after{ position:absolute; inset:0; clip-path:inset(0 0 0 50%) }
+.ba-before{ position:relative }
+
+/* vertical divider line */
+.ba-compare::before{
+  content:""; position:absolute; inset:0 auto 0 50%;
+  width:2px; background:linear-gradient(#fff,#bbb);
+  mix-blend-mode:screen; opacity:.9; pointer-events:none;
+}
+
+/* handle (larger, arrows, shadow) */
+.ba-handle{
+  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:48px; height:48px; border-radius:50%;
+  display:grid; place-items:center; z-index:3;
+  background:linear-gradient(135deg,#5b21b6,#a21caf);
+  box-shadow:0 12px 28px rgba(90,33,182,.35),0 0 0 3px rgba(255,255,255,.25) inset;
+}
+.ba-handle::before, .ba-handle::after{
+  content:""; position:absolute; top:50%; width:8px; height:8px; border-top:2px solid #fff; border-right:2px solid #fff;
+}
+.ba-handle::before{ left:9px; transform:translateY(-50%) rotate(225deg) }
+.ba-handle::after { right:9px; transform:translateY(-50%) rotate(45deg)  }
+.ba-dot{ width:8px; height:8px; border-radius:50%; background:#fff; opacity:.9 }
+
+/* labels */
+.ba-label{
+  position:absolute; top:10px; z-index:3; padding:.45rem .65rem; border-radius:12px;
+  font-weight:800; font-size:.9rem; color:#fff; background:#000000aa; backdrop-filter:blur(2px);
+}
+.ba-label-left{ left:10px }
+.ba-label-right{ right:10px }
+
+/* range input (accessibility) */
+.ba-range{
+  position:absolute; inset:0; width:100%; height:100%;
+  opacity:0; cursor:ew-resize; z-index:4;
+}
+
+/* hint */
+.ba-hint{
+  position:absolute; left:50%; bottom:12px; transform:translateX(-50%);
+  background:#000000a6; color:#fff; padding:.35rem .65rem; border-radius:999px; font-weight:700;
+  font-size:.85rem; letter-spacing:.02em; display:flex; align-items:center; gap:.35rem;
+  z-index:3; backdrop-filter:blur(4px); pointer-events:none; opacity:0; animation:hintIn .7s .2s forwards, nudge 1.8s .9s ease-out 1;
+}
+.ba-hint i{ font-style:normal; opacity:.85 }
+@keyframes hintIn{ from{ transform:translate(-50%,8px); opacity:0 } to{ transform:translate(-50%,0); opacity:1 } }
+@keyframes nudge{
+  0%{ transform:translate(-50%,0) } 20%{ transform:translate(calc(-50% - 14px),0) }
+  40%{ transform:translate(calc(-50% + 18px),0) } 60%{ transform:translate(-50%,0) }
+  100%{ transform:translate(-50%,0) }
+}
+
+/* quick buttons under each slider */
+.ba-actions{
+  display:flex; gap:.5rem; justify-content:center; margin-top:.6rem;
+}
+.ba-btn{
+  border:0; border-radius:999px; padding:.45rem .85rem; font-weight:800; cursor:pointer;
+  background:#f3e8ff; color:#5b21b6;
+}
+.ba-btn:is(:hover,:focus){ filter:brightness(1.05) }
+.ba-btn.active{ background:linear-gradient(135deg,#5b21b6,#a21caf); color:#fff }
+
+/* focus ring for keyboard users */
+.ba-compare:focus-within .ba-handle{ box-shadow:0 0 0 4px #a855f7aa, 0 12px 28px rgba(90,33,182,.35) }
+  </style>
+  
+  <script>
+  /* ===== Before/After slider + reveal ===== */
+  (function(){
+    const comps = document.querySelectorAll('.ba-compare');
+  
+    comps.forEach(comp => {
+      const afterImg = comp.querySelector('.ba-after');
+      const range    = comp.querySelector('.ba-range');
+      const handle   = comp.querySelector('.ba-handle');
+      const leftLab  = comp.querySelector('.ba-label-left');
+      const rightLab = comp.querySelector('.ba-label-right');
+  
+      // Labels from data- attributes
+      leftLab.textContent  = comp.dataset.labelBefore || 'Before';
+      rightLab.textContent = comp.dataset.labelAfter  || 'After';
+  
+      function setSplit(pct){
+        pct = Math.max(0, Math.min(100, pct));
+        // clip after image and move handle
+        afterImg.style.clipPath = `inset(0 ${100-pct}% 0 0)`;
+        handle.style.left = pct + '%';
+      }
+  
+      // Init from range value
+      setSplit(+range.value);
+  
+      // Pointer controls
+      function updateFromEvent(e){
+        const rect = comp.getBoundingClientRect();
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+        setSplit( (x / rect.width) * 100 );
+        range.value = Math.round((x / rect.width) * 100);
+      }
+      comp.addEventListener('pointerdown', e => { comp.setPointerCapture(e.pointerId); updateFromEvent(e); });
+      comp.addEventListener('pointermove', updateFromEvent);
+      comp.addEventListener('touchstart', updateFromEvent, {passive:true});
+      comp.addEventListener('touchmove',  updateFromEvent, {passive:true});
+  
+      // Range input (keyboard accessible)
+      range.addEventListener('input', e => setSplit(+e.target.value));
+    });
+  
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window){
+      const io = new IntersectionObserver((entries)=>{
+        for (const en of entries){
+          if (en.isIntersecting){ en.target.classList.add('in-view'); io.unobserve(en.target); }
+        }
+      }, {threshold:0.15, rootMargin:'0px 0px -10% 0px'});
+      reveals.forEach(r => io.observe(r));
+    } else {
+      reveals.forEach(r => r.classList.add('in-view'));
+    }
+  })();
+  </script>
+  
+
+   <!-- Footer -->
+  <!-- Footer -->
+<footer class="hf-footer container-fluid px-0">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Brand / About -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="logo.png" alt="HOUSEFUL" class="logo me-2">
+            <div class="fw-bold fs-5">HOUSEFUL</div>
+          </div>
+          <p class="mb-2">We make your house a home. Custom-made furniture crafted in Sri Lanka.</p>
+          <div class="social mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-2">
+          <div class="title">Quick Links</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Collections -->
+        <div class="col-6 col-md-3">
+          <div class="title">Collections</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-3">
+          <div class="title">Contact</div>
+          <ul class="list-unstyled mb-3">
+            <li><i class="fa fa-map-marker-alt me-2"></i>93/4 Weera Uditha Mawatha, Hadigama, Piliyandala</li>
+            <li><a href="tel:+94777317598"><i class="fa fa-phone-alt me-2"></i>+94 777 317 598</a></li>
+            <li><a href="mailto:mevancadesilva@gmail.com"><i class="fa fa-envelope me-2"></i>mevancadesilva@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hf-copy text-center">
+      © 2025 HOUSEFUL Custom-Made Furniture · Designed by Quantum Leap Solutions
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+
+<style>
+  /* ---- HOUSEFUL Footer ---- */
+.hf-footer {
+  background: linear-gradient(90deg, #240046 0%, #5A189A 100%);
+  color: #fff;
+  border-radius: 14px 14px 0 0;
+  margin-top: 60px;
+}
+
+.hf-footer a {
+  color: #E9D8FD;
+  text-decoration: none;
+}
+.hf-footer a:hover { color: #ffffff; text-decoration: underline; }
+
+.hf-footer .title {
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 1rem;
+}
+
+.hf-footer .logo {
+  height: 46px;
+  width: auto;
+}
+
+.hf-footer .social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(255,255,255,.1);
+  margin-right: .4rem;
+}
+.hf-footer .social a:hover { background: rgba(255,255,255,.2); }
+
+.hf-copy {
+  background:#1e1e1e; color:#cfcfcf; font-size:.95rem;
+  padding: .9rem 0;
+}
+</style>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $('.header-carousel').owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      items: 1,
+      dots: true,
+      loop: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HOUSEFUL - Custom Made Furniture</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="HOUSEFUL Custom-Made Furniture | We make your house a home. Expert craftsmanship and bespoke furniture designs from Sri Lanka.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons & Libraries -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Custom -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* --- Custom Home Tweaks --- */
+    .header-carousel .owl-carousel-item img {
+      height: 65vh;
+      object-fit: cover;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .section-title {
+      color: #5A189A;
+      font-weight: 600;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .cta-banner {
+      background: linear-gradient(to right, #240046, #5A189A);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+    .cta-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =======================
+       NAVBAR (Mobile Offcanvas) — with dropdowns
+  ======================= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm hf-nav px-3 px-lg-4">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" />
+      <!-- brand text only on lg+ -->
+      <span class="hf-brand-wrap d-none d-lg-flex flex-column lh-1">
+        <strong class="hf-brand">HOUSEFUL</strong>
+        <small class="text-muted">We make your house a home</small>
+      </span>
+    </a>
+  
+    <!-- Toggler (offcanvas) -->
+    <button class="navbar-toggler ms-auto" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#hfOffcanvas"
+            aria-controls="hfOffcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Desktop links -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto align-items-lg-center hf-nav-links">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+        <!-- About dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navAbout" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu" aria-labelledby="navAbout">
+            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+            <li><a class="dropdown-item" href="history.html">History</a></li>
+            <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+          
+          </ul>
+        </li>
+  
+        <!-- Projects dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="projects.html" id="navProjects" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu" aria-labelledby="navProjects">
+            <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary ms-lg-3 hf-cta">Get a Quote</a>
+    </div>
+  
+    <!-- Offcanvas (mobile / tablet) -->
+    <div class="offcanvas offcanvas-end hf-offcanvas" tabindex="-1" id="hfOffcanvas" aria-labelledby="hfOffcanvasLabel">
+      <div class="offcanvas-header">
+        <!-- logo only -->
+        <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" id="hfOffcanvasLabel" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="navbar-nav hf-mobile-nav mb-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+  
+          <!-- About dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="mAbout" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mAbout">
+              <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+              <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+            </ul>
+          </li>
+  
+          <!-- Projects dropdown (mobile) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="household.html" id="mProjects" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mProjects">
+              <li><a class="dropdown-item" href="household.html">Household</a></li>
+            <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+            <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+            <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+  
+        <!-- Quick actions -->
+        <div class="mt-auto pt-2 border-top">
+          <a href="contact.html" class="btn btn-primary w-100 mb-2">Get a Quote</a>
+          <div class="d-flex gap-3 small">
+            <a class="text-decoration-none" href="tel:+94777317598"><i class="bi bi-telephone me-1"></i>+94 777 317 598</a>
+            <a class="text-decoration-none" href="mailto:mevancadesilva@gmail.com"><i class="bi bi-envelope me-1"></i>Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<style>
+  /* ===== Navbar + dropdown polish ===== */
+:root{ --hf-violet:#6a1fb7; --hf-indigo:#4c1d95; }
+
+.hf-nav { min-height: 64px; }
+.hf-logo{ height:46px; width:auto; display:block; }
+@media (max-width:575.98px){ .hf-logo{ height:40px } }
+
+.hf-brand{ font-weight:800; letter-spacing:.2px; }
+
+.hf-nav-links .nav-link{
+padding:.75rem 1rem; font-weight:600; color:#3b3b3b; position:relative;
+}
+.hf-nav-links .nav-link:hover,.hf-nav-links .nav-link:focus{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active::after,.hf-nav-links .nav-link:hover::after{
+content:""; position:absolute; left:1rem; right:1rem; bottom:.35rem;
+height:2px; background:linear-gradient(90deg,var(--hf-indigo),var(--hf-violet)); border-radius:2px;
+}
+
+/* Dropdowns */
+.navbar .dropdown-menu{
+border-radius:12px; border:1px solid #eee; box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.dropdown-item{ padding:.55rem .9rem; font-weight:600; }
+.dropdown-item:hover{ background:#f6f3ff; color:#381e72; }
+
+/* Show dropdown on hover for lg+ */
+@media (min-width:992px){
+.nav-item.dropdown:hover .dropdown-menu{ display:block; margin-top:0; }
+}
+
+/* Offcanvas layout */
+.hf-offcanvas{ max-width:320px; border-left:1px solid rgba(0,0,0,.06); }
+.hf-mobile-nav .nav-link{
+padding:.9rem 0; font-size:1.05rem; font-weight:600; border-bottom:1px solid #f1f1f1;
+}
+.hf-mobile-nav .nav-link:last-child{ border-bottom:none; }
+.hf-mobile-nav .nav-link.active{ color:var(--hf-violet); }
+
+/* Mobile dropdown menus should be full-width and static positioned */
+.dropdown-menu-mobile{
+position: static; float: none; box-shadow: none; border:0; padding:.25rem 0 .5rem;
+}
+.dropdown-menu-mobile .dropdown-item{ padding:.55rem 0; }
+
+/* Buttons */
+.hf-cta{ font-weight:700; }
+.btn-primary{ background:linear-gradient(135deg,var(--hf-indigo),var(--hf-violet)); border:none; }
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* Controls spacing */
+.navbar-toggler{ border:none; padding:.35rem .5rem; }
+.navbar-toggler:focus{ box-shadow:0 0 0 .15rem rgba(106,31,183,.25); }
+
+</style>
+<!-- ✅ Tight stack: WhatsApp button ABOVE, purple banner BELOW, tiny gap + richer animations -->
+<div class="hf-fab-stack" aria-live="polite">
+  <!-- WhatsApp -->
+  <a class="hf-whatsapp-fab"
+     href="https://wa.me/94777317598?text=Hi%20HOUSEFUL%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20custom%20furniture%20project."
+     target="_blank" rel="noopener" aria-label="Chat with HOUSEFUL on WhatsApp">
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+      <path fill="#fff" d="M19.6 17.5c-.3-.1-1.8-.9-2-.9s-.5-.1-.7.3-.8 1-1 1.2c-.2.2-.4.2-.7.1-1.9-.8-3.1-2.7-3.3-3.1-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.8.6.8.3 1.6.3 2.2.2.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7 0-.2-.2-.2-.5-.3z"/>
+      <path fill="#fff" opacity=".35" d="M16 3.2C9.2 3.2 3.8 8.6 3.8 15.4c0 2.6.9 5 2.3 7l-1.5 5.4 5.6-1.5c1.9 1.2 4.1 1.9 6.6 1.9 6.8 0 12.2-5.4 12.2-12.2S22.8 3.2 16 3.2zm0 22c-2.1 0-4.1-.6-5.7-1.7l-.4-.2-3.3.9.9-3.2-.2-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.6 4.6-10.2 10.2-10.2S26.2 9.8 26.2 15.4 21.6 25.2 16 25.2z"/>
+    </svg>
+  </a>
+
+  <!-- Identity banner (with SL flag PNG/SVG) -->
+  <div class="hf-floating-identity" role="note">
+    <img src="img/LK.svg" alt="Sri Lanka Flag" class="hf-flag">
+    <span>All the creations blend with Sri Lankan identity</span>
+  </div>
+</div>
+
+<style>
+  /* ===== Fixed stack (tight gap) ===== */
+  .hf-fab-stack{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;       /* top item first, then below */
+    align-items: flex-end;
+    gap: 6px;                     /* << smaller gap here */
+    animation: hf-stack-enter .45s ease-out both;
+  }
+  @keyframes hf-stack-enter{
+    from{ transform: translateY(12px); opacity:.0 }
+    to  { transform: translateY(0);    opacity:1 }
+  }
+
+  /* ===== WhatsApp FAB ===== */
+  .hf-whatsapp-fab{
+    width: 56px; height: 56px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #25D366, #128C7E);
+    border: 1px solid rgba(255,255,255,.35);
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    transition: transform .15s ease, box-shadow .25s ease, filter .2s ease;
+    animation: hf-pop .4s ease-out .1s both, hf-float 4.2s ease-in-out 1s infinite;
+  }
+  .hf-whatsapp-fab:hover{
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(0,0,0,.32);
+    filter: saturate(1.05);
+  }
+
+  /* ===== Identity pill ===== */
+  .hf-floating-identity{
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px; color:#fff;
+    background: linear-gradient(135deg, #4c1d95, #a21caf, #4c1d95);
+    background-size: 300% 300%;
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    font-weight: 700; font-size: .95rem; text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    animation: hf-slide-up .55s ease-out .2s both, hf-gradient 8s ease-in-out 1.2s infinite, hf-glow 3s ease-in-out 1.2s infinite;
+  }
+  .hf-floating-identity:hover{ transform: translateY(-1px) }
+
+  .hf-flag{ width:22px; height:auto; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,.25) }
+
+  /* ===== Animations ===== */
+  @keyframes hf-pop{ from{ transform: scale(.9); opacity:.0 } to{ transform: scale(1); opacity:1 } }
+  @keyframes hf-float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-3px) } }
+  @keyframes hf-slide-up{ from{ transform: translateY(10px); opacity:.0 } to{ transform: translateY(0); opacity:1 } }
+  @keyframes hf-gradient{
+    0%,100%{ background-position: 0% 50% }
+    50%    { background-position: 100% 50% }
+  }
+  @keyframes hf-glow{
+    0%,100%{ box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 0 rgba(162,28,175,.12) }
+    50%    { box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 10px rgba(162,28,175,.08) }
+  }
+
+  /* ===== Mobile tweaks ===== */
+  @media (max-width: 575.98px){
+    .hf-fab-stack{ right: 10px; bottom: 10px; gap: 6px; }
+    .hf-whatsapp-fab{ width:52px; height:52px }
+    .hf-floating-identity{ font-size:.86rem; padding:8px 12px }
+    .hf-flag{ width:20px }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .hf-fab-stack, .hf-whatsapp-fab, .hf-floating-identity{ animation: none !important }
+  }
+</style>
+<!-- =======================
+     ABOUT US SECTION
+======================= -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="about-subtitle animate-up">Ayubowan</h4>
+      <h2 class="about-title animate-up delay-1">Your Furniture Should Reflect Your Style</h2>
+      <p class="about-intro animate-up delay-2">
+        At At HOUSEFUL, every piece of furniture tells a story. A story of craftsmanship, identity, individuality and
+        timeless elegance. Our philosophy is deeply rooted in blending traditional artistry with
+        modern innovation, creating spaces that not only look exquisite but also feel profoundly
+        alive, with each design is a celebration of Sri Lankan heritage, handcrafted with care to reflect your
+        unique way of living.
+      </p>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-image animate-left">
+          <img src="img/about.jpeg" alt="HOUSEFUL craftsmanship" class="img-fluid rounded shadow-lg" />
+        </div>
+      </div>
+
+      <div class="col-lg-6 animate-right">
+        <div class="about-text">
+          <p>
+            <strong>HOUSEFUL</strong> was founded by <strong>Mevan De Silva</strong>, HOUSEFUL was founded by Mevan De Silva, a passionate designer whose career began as a salesman at
+            Ms. Lakdiva Furnishers, Moratuwa, a pioneer in the industry &amp; one of Sri Lanka’s leading furniture
+            suppliers. His commitment and understanding of the industry quickly earned him a promotion
+            to Showroom Manager (Merchandising), where he developed extensive knowledge in everything from
+            raw timber to showroom presentation. This deep, hands-on experience became the cornerstone of his
+            vision for authentic Sri Lankan craftsmanship.
+          </p>
+
+          <p>
+            In 2018, that vision came to life with the opening of the first HOUSEFUL showroom, a name inspired by a
+close friend. The business was well received, recognized for its elegant craftsmanship and personal
+approach to design.
+          </p>
+
+          <P>
+            Despite the challenges of the COVID-19 pandemic, HOUSEFUL adapted and continued operations from its
+current base in Moratuwa, the heart of Sri Lanka’s furniture-making heritage.
+          </P>
+
+          <p>
+            Over the years, HOUSEFUL has served an esteemed clientele including Mr. Ashok Pathirage, Mr. Muhundan
+Kanagay, Mr. Ravi Karunanayaka, Mr. Johnston Fernando, Mr. Asanga Senevirathna, Mr. Manjula
+Senevirathna, and Mr. Rohan Buultjens.
+          </p>
+
+          <p>
+            Its craftsmanship has also been featured in renowned hospitality projects such as Anilana
+Nilaveli, Anilana Pasikudah, and the popular Brown Bean Coffee Café chain, each project reflecting the
+creativity, precision, and cultural depth that define the brand.
+          </p>
+
+          <p>
+            HOUSEFUL has also collaborated with many of Sri Lanka’s most respected architects, including Mr. Vipula
+Munasingha, Mr. Asela Perera, Mr. Heshan Sendanayake, Mr. Sheran Henry, Mr. Channa Horombuwa,
+and Mr. Dineth Kottahachchi. These partnerships have helped shape some of the island’s most refined and
+visionary interior spaces.
+          </p>
+
+          <P>
+            Each creation is handcrafted from ethically sourced timber and brought to life by skilled artisans from
+Moratuwa. Combining modern design sensibilities with traditional craftsmanship, HOUSEFUL ensures that
+every piece embodies quality, comfort, and the essence of Sri Lankan identity.
+          </P>
+
+          <p class="mb-0">
+            Today, HOUSEFUL continues to redefine interior spaces across Sri Lanka, blending heritage with modern
+artistry and building a legacy of design that celebrates both craftsmanship and culture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <style>
+    :root {
+  --hf-violet: #6a1fb7;
+  --hf-indigo: #4c1d95;
+  --hf-gold: #ffd60a;
+  --hf-text: #2b1a38;
+}
+
+/* Section Layout */
+.about-section {
+  background: linear-gradient(180deg, #fff 0%, #ffffff 100%);
+  color: var(--hf-text);
+  overflow: hidden;
+}
+
+.about-subtitle {
+  color: var(--hf-violet);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 992px) {
+  .hf-about .about-eyebrow {
+    font-size: 1.50rem;
+  }
+}
+
+.about-title {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-intro {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-size: 1.05rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-image img {
+  border-radius: 18px;
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+.mission-banner {
+  background: linear-gradient(135deg, var(--hf-indigo), var(--hf-violet));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-up.show,
+.animate-left.show,
+.animate-right.show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .about-text p { font-size: 0.95rem; }
+  .mission-banner { padding: 2.5rem 1.2rem; }
+  .about-image img { width: 100%; }
+}
+
+  </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const animEls = document.querySelectorAll('.animate-up, .animate-left, .animate-right');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('show');
+        });
+      }, { threshold: 0.2 });
+    
+      animEls.forEach(el => obs.observe(el));
+    });
+    </script>
+    
+<!-- =======================
+     VISION & MISSION (About Us)
+     Drop this whole block where you want the section
+======================= -->
+<section id="vision-mission" class="vm-section" aria-labelledby="vm-title">
+  <div class="vm-container">
+    <header class="vm-header" role="presentation">
+      <p class="vm-kicker" aria-hidden="true">About HOUSEFUL</p>
+      <h2 id="vm-title" class="vm-title">Vision &amp; Mission</h2>
+      <p class="vm-intro">
+        Rooted in Sri Lankan heritage and refined with contemporary craft, HOUSEFUL creates meaningful, lasting furniture for everyday life.
+      </p>
+    </header>
+
+    <div class="vm-grid">
+      <!-- Vision -->
+      <article class="vm-card reveal" aria-labelledby="vm-vision-title" tabindex="0">
+        <div class="vm-card-inner">
+          <div class="vm-icon" aria-hidden="true">
+            <!-- Eye icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path d="M12 5C6.48 5 2.05 8.23.5 12c1.55 3.77 5.98 7 11.5 7s9.95-3.23 11.5-7C21.95 8.23 17.52 5 12 5zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+            </svg>
+          </div>
+          <h3 id="vm-vision-title" class="vm-card-title">Vision</h3>
+          <p class="vm-card-text">
+            Celebrate Sri Lankan identity in every creation by blending modern design
+            with the island’s rich traditional aesthetics.
+          </p>
+        </div>
+      </article>
+
+      <!-- Mission -->
+      <article class="vm-card reveal" aria-labelledby="vm-mission-title" tabindex="0">
+        <div class="vm-card-inner">
+          <div class="vm-icon" aria-hidden="true">
+            <!-- Target icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path d="M12 2a10 10 0 1 0 10 10h-2A8 8 0 1 1 12 4V2zm0 4a6 6 0 1 0 6 6h-2a4 4 0 1 1-4-4V6zm1-4h-2v7l6 3 1-1.73-5-2.5V2z"/>
+            </svg>
+          </div>
+          <h3 id="vm-mission-title" class="vm-card-title">Mission</h3>
+          <p class="vm-card-text">
+            Delight every client with excellent products and reliable, trustworthy service—
+            building long-term partnerships founded on quality, integrity, and care.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Decorative background (auto-disables with reduced motion) -->
+  <div class="vm-bg" aria-hidden="true"></div>
+</section>
+
+<style>
+/* =======================
+   VISION & MISSION styles
+   (mobile-first, accessible, animated)
+======================= */
+:root{
+  /* Try to match your site's palette */
+  --vm-indigo:#4c1d95;
+  --vm-magenta:#a21caf;
+  --vm-ink:#1b1324;
+  --vm-soft:#f8f5ff;
+  --vm-text:#493f55;
+  --vm-card:#ffffff;
+  --vm-ring:#e7dcff;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --vm-card:#16151b;
+    --vm-soft:#120f1a;
+    --vm-text:#dcd5e8;
+    --vm-ring:#2a1f43;
+  }
+}
+
+.vm-section{
+  position: relative;
+  padding: 56px 16px;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 1200px at 110% 110%, rgba(162,28,175,.08), transparent 45%),
+    radial-gradient(1000px 1000px at -10% -10%, rgba(76,29,149,.08), transparent 45%);
+}
+
+.vm-container{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.vm-header{
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.vm-kicker{
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 800;
+  color: var(--vm-magenta);
+  margin: 0 0 .25rem;
+  font-size: .9rem;
+}
+
+.vm-title{
+  font-weight: 900;
+  color: var(--vm-ink);
+  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
+  margin: 0 0 .35rem;
+}
+
+.vm-intro{
+  color: #120f1a;
+  margin: 0 auto;
+  max-width: 780px;
+  line-height: 1.55;
+  font-size: 1rem;
+}
+
+/* Grid */
+.vm-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+@media (min-width: 768px){
+  .vm-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+/* Cards */
+.vm-card{
+  background: var(--vm-card);
+  border-radius: 16px;
+  border: 1px solid #ece9f6;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease;
+  outline: none;
+}
+
+.vm-card:focus-visible{
+  border-color: var(--vm-ring);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--vm-magenta) 15%, transparent);
+}
+
+.vm-card-inner{
+  position: relative;
+  padding: 18px 16px 18px 16px;
+}
+
+@media (min-width: 768px){
+  .vm-card-inner{ padding: 22px 18px; }
+}
+
+/* Subtle gradient underline */
+.vm-card-inner::after{
+  content:"";
+  position:absolute; inset:auto 12px 10px 12px; height:3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--vm-indigo), var(--vm-magenta));
+  opacity:.9;
+}
+
+/* Micro-interaction */
+.vm-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+
+/* Icon pill */
+.vm-icon{
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: grid; place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--vm-indigo), var(--vm-magenta));
+  box-shadow: 0 8px 18px rgba(76,29,149,.25);
+  margin-bottom: 10px;
+}
+
+.vm-card-title{
+  margin: 0 0 .25rem;
+  font-weight: 800;
+  color: var(--vm-ink);
+  font-size: 1.2rem;
+}
+
+.vm-card-text{
+  margin: 0;
+  color: var(--vm-text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Reveal on scroll (staggered) */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px) scale(.98);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.in-view{
+  opacity: 1;
+  transform: none;
+}
+
+/* Decorative animated background */
+.vm-bg{
+  position: absolute; inset: -30% -10% auto auto;
+  width: 60%; height: 140%;
+  background:
+    radial-gradient(closest-side, rgba(255,255,255,.12), transparent 60%),
+    conic-gradient(from 0deg, rgba(162,28,175,.08), rgba(76,29,149,.08), transparent 35%);
+  filter: blur(24px);
+  animation: vm-sway 24s ease-in-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes vm-sway{
+  0%,100%{ transform: translate3d(0,0,0) rotate(0deg) }
+  50%    { transform: translate3d(-2%, -2%, 0) rotate(3deg) }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce){
+  .reveal{ transition: none; opacity: 1; transform: none; }
+  .vm-bg{ animation: none }
+}
+</style>
+
+<script>
+/* =======================
+   Vision & Mission — UX helpers
+   - IntersectionObserver reveal with stagger
+   - Small hover "tilt" that respects reduced motion
+======================= */
+(function(){
+  const cards = document.querySelectorAll('#vision-mission .reveal');
+
+  // Intersection Observer (reveal on scroll)
+  if ('IntersectionObserver' in window && cards.length){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          // Stagger via transition-delay
+          entry.target.style.transitionDelay = (Array.from(cards).indexOf(entry.target) * 80) + 'ms';
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.15, rootMargin: "0px 0px -10% 0px"});
+    cards.forEach(el => io.observe(el));
+  } else {
+    cards.forEach(el => el.classList.add('in-view'));
+  }
+
+  // Subtle tilt on hover/focus (desktop only, not on reduced motion)
+  const mediaReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isTouch = matchMedia('(hover: none)').matches;
+
+  if (!mediaReduced.matches && !isTouch){
+    const tilt = (el, e) => {
+      const rect = el.getBoundingClientRect();
+      const cx = rect.left + rect.width/2;
+      const cy = rect.top + rect.height/2;
+      const dx = (e.clientX - cx) / rect.width;  // -0.5..0.5
+      const dy = (e.clientY - cy) / rect.height; // -0.5..0.5
+      el.style.transform = `rotateX(${(-dy*4).toFixed(2)}deg) rotateY(${(dx*6).toFixed(2)}deg) translateY(-3px)`;
+    };
+
+    const reset = (el) => {
+      el.style.transform = '';
+    };
+
+    document.querySelectorAll('#vision-mission .vm-card').forEach(card=>{
+      card.addEventListener('mousemove', (e)=>tilt(card, e));
+      card.addEventListener('mouseleave', ()=>reset(card));
+      card.addEventListener('focus', ()=>card.style.transform='translateY(-3px)');
+      card.addEventListener('blur', ()=>reset(card));
+    });
+  }
+})();
+</script>
+
+<!-- =======================
+     FACTORY IMAGES (simple display)
+======================= -->
+<section id="factory-photos" class="py-5">
+  <div class="container">
+    <h2 class="h3 fw-bold mb-3">Factory Images</h2>
+
+    <div class="row g-3 g-md-4">
+      <div class="col-6 col-md-4">
+        <img src="projects/factory1.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Workshop aisle with machines and timber" loading="lazy">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="projects/factory2.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Cabinet carcass assembly area" loading="lazy">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="projects/factory3.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Cutting and preparation tables" loading="lazy">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="projects/factory4.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Routing and sanding work in progress" loading="lazy">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="projects/factory5.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Primer and sealing on panels" loading="lazy">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="projects/factory6.jpeg" class="factory-img img-fluid rounded-3 shadow-sm"
+             alt="Finishing station and QC" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Make thumbnails neat and consistent */
+.factory-img{
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* tidy grid; remove if you want natural heights */
+  object-fit: cover;
+}
+</style>
+
+
+
+   <!-- Footer -->
+  <!-- Footer -->
+<footer class="hf-footer container-fluid px-0">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Brand / About -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="logo.png" alt="HOUSEFUL" class="logo me-2">
+            <div class="fw-bold fs-5">HOUSEFUL</div>
+          </div>
+          <p class="mb-2">We make your house a home. Custom-made furniture crafted in Sri Lanka.</p>
+          <div class="social mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-2">
+          <div class="title">Quick Links</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Collections -->
+        <div class="col-6 col-md-3">
+          <div class="title">Collections</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-3">
+          <div class="title">Contact</div>
+          <ul class="list-unstyled mb-3">
+            <li><i class="fa fa-map-marker-alt me-2"></i>93/4 Weera Uditha Mawatha, Hadigama, Piliyandala</li>
+            <li><a href="tel:+94777317598"><i class="fa fa-phone-alt me-2"></i>+94 777 317 598</a></li>
+            <li><a href="mailto:mevancadesilva@gmail.com"><i class="fa fa-envelope me-2"></i>mevancadesilva@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hf-copy text-center">
+      © 2025 HOUSEFUL Custom-Made Furniture · Designed by Quantum Leap Solutions
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+
+<style>
+  /* ---- HOUSEFUL Footer ---- */
+.hf-footer {
+  background: linear-gradient(90deg, #240046 0%, #5A189A 100%);
+  color: #fff;
+  border-radius: 14px 14px 0 0;
+  margin-top: 60px;
+}
+
+.hf-footer a {
+  color: #E9D8FD;
+  text-decoration: none;
+}
+.hf-footer a:hover { color: #ffffff; text-decoration: underline; }
+
+.hf-footer .title {
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 1rem;
+}
+
+.hf-footer .logo {
+  height: 46px;
+  width: auto;
+}
+
+.hf-footer .social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(255,255,255,.1);
+  margin-right: .4rem;
+}
+.hf-footer .social a:hover { background: rgba(255,255,255,.2); }
+
+.hf-copy {
+  background:#1e1e1e; color:#cfcfcf; font-size:.95rem;
+  padding: .9rem 0;
+}
+</style>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $('.header-carousel').owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      items: 1,
+      dots: true,
+      loop: true
+    });
+  </script>
+</body>
+</html>

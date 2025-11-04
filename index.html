@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HOUSEFUL - Custom Made Furniture</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="HOUSEFUL Custom-Made Furniture | We make your house a home. Expert craftsmanship and bespoke furniture designs from Sri Lanka.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons & Libraries -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Custom -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* --- Custom Home Tweaks --- */
+    .header-carousel .owl-carousel-item img {
+      height: 65vh;
+      object-fit: cover;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .section-title {
+      color: #5A189A;
+      font-weight: 600;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .cta-banner {
+      background: linear-gradient(to right, #240046, #5A189A);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+    .cta-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- =======================
+     NAVBAR (Mobile Offcanvas) — with dropdowns
+======================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm hf-nav px-3 px-lg-4">
+  <!-- Brand -->
+  <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" />
+    <!-- brand text only on lg+ -->
+    <span class="hf-brand-wrap d-none d-lg-flex flex-column lh-1">
+      <strong class="hf-brand">HOUSEFUL</strong>
+      <small class="text-muted">We make your house a home</small>
+    </span>
+  </a>
+
+  <!-- Toggler (offcanvas) -->
+  <button class="navbar-toggler ms-auto" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#hfOffcanvas"
+          aria-controls="hfOffcanvas" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Desktop links -->
+  <div class="collapse navbar-collapse d-none d-lg-flex">
+    <ul class="navbar-nav ms-auto align-items-lg-center hf-nav-links">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+      <!-- About dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="navAbout" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">About</a>
+        <ul class="dropdown-menu" aria-labelledby="navAbout">
+          <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+          <li><a class="dropdown-item" href="history.html">History</a></li>
+          <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+        
+        </ul>
+      </li>
+
+      <!-- Projects dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="projects.html" id="navProjects" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+        <ul class="dropdown-menu" aria-labelledby="navProjects">
+          <li><a class="dropdown-item" href="household.html">Household</a></li>
+          <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+          <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+          <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary ms-lg-3 hf-cta">Get a Quote</a>
+  </div>
+
+  <!-- Offcanvas (mobile / tablet) -->
+  <div class="offcanvas offcanvas-end hf-offcanvas" tabindex="-1" id="hfOffcanvas" aria-labelledby="hfOffcanvasLabel">
+    <div class="offcanvas-header">
+      <!-- logo only -->
+      <img src="logo.png" alt="HOUSEFUL logo" class="hf-logo" id="hfOffcanvasLabel" />
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <ul class="navbar-nav hf-mobile-nav mb-3">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+        <!-- About dropdown (mobile) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="mAbout" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mAbout">
+            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+            <li><a class="dropdown-item" href="history.html">History</a></li>
+            <li><a class="dropdown-item" href="award.html">Award &amp; Recognition</a></li>
+          </ul>
+        </li>
+
+        <!-- Projects dropdown (mobile) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="household.html" id="mProjects" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mProjects">
+            <li><a class="dropdown-item" href="household.html">Household</a></li>
+          <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+          <li><a class="dropdown-item" href="Decorative.html">Decorative Items</a></li>
+          <li><a class="dropdown-item" href="before.html">Before &amp; After</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Client Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Quick actions -->
+      <div class="mt-auto pt-2 border-top">
+        <a href="contact.html" class="btn btn-primary w-100 mb-2">Get a Quote</a>
+        <div class="d-flex gap-3 small">
+          <a class="text-decoration-none" href="tel:+94777317598"><i class="bi bi-telephone me-1"></i>+94 777 317 598</a>
+          <a class="text-decoration-none" href="mailto:mevancadesilva@gmail.com"><i class="bi bi-envelope me-1"></i>Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* ===== Navbar + dropdown polish ===== */
+:root{ --hf-violet:#6a1fb7; --hf-indigo:#4c1d95; }
+
+.hf-nav { min-height: 64px; }
+.hf-logo{ height:46px; width:auto; display:block; }
+@media (max-width:575.98px){ .hf-logo{ height:40px } }
+
+.hf-brand{ font-weight:800; letter-spacing:.2px; }
+
+.hf-nav-links .nav-link{
+padding:.75rem 1rem; font-weight:600; color:#3b3b3b; position:relative;
+}
+.hf-nav-links .nav-link:hover,.hf-nav-links .nav-link:focus{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active{ color:var(--hf-violet); }
+.hf-nav-links .nav-link.active::after,.hf-nav-links .nav-link:hover::after{
+content:""; position:absolute; left:1rem; right:1rem; bottom:.35rem;
+height:2px; background:linear-gradient(90deg,var(--hf-indigo),var(--hf-violet)); border-radius:2px;
+}
+
+/* Dropdowns */
+.navbar .dropdown-menu{
+border-radius:12px; border:1px solid #eee; box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.dropdown-item{ padding:.55rem .9rem; font-weight:600; }
+.dropdown-item:hover{ background:#f6f3ff; color:#381e72; }
+
+/* Show dropdown on hover for lg+ */
+@media (min-width:992px){
+.nav-item.dropdown:hover .dropdown-menu{ display:block; margin-top:0; }
+}
+
+/* Offcanvas layout */
+.hf-offcanvas{ max-width:320px; border-left:1px solid rgba(0,0,0,.06); }
+.hf-mobile-nav .nav-link{
+padding:.9rem 0; font-size:1.05rem; font-weight:600; border-bottom:1px solid #f1f1f1;
+}
+.hf-mobile-nav .nav-link:last-child{ border-bottom:none; }
+.hf-mobile-nav .nav-link.active{ color:var(--hf-violet); }
+
+/* Mobile dropdown menus should be full-width and static positioned */
+.dropdown-menu-mobile{
+position: static; float: none; box-shadow: none; border:0; padding:.25rem 0 .5rem;
+}
+.dropdown-menu-mobile .dropdown-item{ padding:.55rem 0; }
+
+/* Buttons */
+.hf-cta{ font-weight:700; }
+.btn-primary{ background:linear-gradient(135deg,var(--hf-indigo),var(--hf-violet)); border:none; }
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* Controls spacing */
+.navbar-toggler{ border:none; padding:.35rem .5rem; }
+.navbar-toggler:focus{ box-shadow:0 0 0 .15rem rgba(106,31,183,.25); }
+
+</style>
+
+  <!-- Hero Carousel -->
+  <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-lg-7 hero-text">
+                <h1 class="display-4 fw-bold text-white mb-3">Custom-Made Furniture for Modern Living</h1>
+                <p class="lead text-white mb-4">Every piece tells a story — crafted to reflect your style and comfort.</p>
+                <a href="projects.html" class="btn btn-light px-4 py-2">Explore Projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-lg-7 hero-text">
+                <h1 class="display-4 fw-bold text-white mb-3">Beautiful. Functional. Timeless.</h1>
+                <p class="lead text-white mb-4">Crafted with precision and passion to make your house a home.</p>
+                <a href="about.html" class="btn btn-light px-4 py-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ✅ Tight stack: WhatsApp button ABOVE, purple banner BELOW, tiny gap + richer animations -->
+<div class="hf-fab-stack" aria-live="polite">
+  <!-- WhatsApp -->
+  <a class="hf-whatsapp-fab"
+     href="https://wa.me/94777317598?text=Hi%20HOUSEFUL%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20custom%20furniture%20project."
+     target="_blank" rel="noopener" aria-label="Chat with HOUSEFUL on WhatsApp">
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+      <path fill="#fff" d="M19.6 17.5c-.3-.1-1.8-.9-2-.9s-.5-.1-.7.3-.8 1-1 1.2c-.2.2-.4.2-.7.1-1.9-.8-3.1-2.7-3.3-3.1-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.3.3-.5s0-.4 0-.5c0-.1-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.8.6.8.3 1.6.3 2.2.2.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7 0-.2-.2-.2-.5-.3z"/>
+      <path fill="#fff" opacity=".35" d="M16 3.2C9.2 3.2 3.8 8.6 3.8 15.4c0 2.6.9 5 2.3 7l-1.5 5.4 5.6-1.5c1.9 1.2 4.1 1.9 6.6 1.9 6.8 0 12.2-5.4 12.2-12.2S22.8 3.2 16 3.2zm0 22c-2.1 0-4.1-.6-5.7-1.7l-.4-.2-3.3.9.9-3.2-.2-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.6 4.6-10.2 10.2-10.2S26.2 9.8 26.2 15.4 21.6 25.2 16 25.2z"/>
+    </svg>
+  </a>
+
+  <!-- Identity banner (with SL flag PNG/SVG) -->
+  <div class="hf-floating-identity" role="note">
+    <img src="img/LK.svg" alt="Sri Lanka Flag" class="hf-flag">
+    <span>All the creations blend with Sri Lankan identity</span>
+  </div>
+</div>
+
+<style>
+  /* ===== Fixed stack (tight gap) ===== */
+  .hf-fab-stack{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;       /* top item first, then below */
+    align-items: flex-end;
+    gap: 6px;                     /* << smaller gap here */
+    animation: hf-stack-enter .45s ease-out both;
+  }
+  @keyframes hf-stack-enter{
+    from{ transform: translateY(12px); opacity:.0 }
+    to  { transform: translateY(0);    opacity:1 }
+  }
+
+  /* ===== WhatsApp FAB ===== */
+  .hf-whatsapp-fab{
+    width: 56px; height: 56px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #25D366, #128C7E);
+    border: 1px solid rgba(255,255,255,.35);
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    transition: transform .15s ease, box-shadow .25s ease, filter .2s ease;
+    animation: hf-pop .4s ease-out .1s both, hf-float 4.2s ease-in-out 1s infinite;
+  }
+  .hf-whatsapp-fab:hover{
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(0,0,0,.32);
+    filter: saturate(1.05);
+  }
+
+  /* ===== Identity pill ===== */
+  .hf-floating-identity{
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px; color:#fff;
+    background: linear-gradient(135deg, #4c1d95, #a21caf, #4c1d95);
+    background-size: 300% 300%;
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    font-weight: 700; font-size: .95rem; text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    animation: hf-slide-up .55s ease-out .2s both, hf-gradient 8s ease-in-out 1.2s infinite, hf-glow 3s ease-in-out 1.2s infinite;
+  }
+  .hf-floating-identity:hover{ transform: translateY(-1px) }
+
+  .hf-flag{ width:22px; height:auto; border-radius:3px; box-shadow:0 1px 4px rgba(0,0,0,.25) }
+
+  /* ===== Animations ===== */
+  @keyframes hf-pop{ from{ transform: scale(.9); opacity:.0 } to{ transform: scale(1); opacity:1 } }
+  @keyframes hf-float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-3px) } }
+  @keyframes hf-slide-up{ from{ transform: translateY(10px); opacity:.0 } to{ transform: translateY(0); opacity:1 } }
+  @keyframes hf-gradient{
+    0%,100%{ background-position: 0% 50% }
+    50%    { background-position: 100% 50% }
+  }
+  @keyframes hf-glow{
+    0%,100%{ box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 0 rgba(162,28,175,.12) }
+    50%    { box-shadow: 0 12px 28px rgba(0,0,0,.22), 0 0 0 10px rgba(162,28,175,.08) }
+  }
+
+  /* ===== Mobile tweaks ===== */
+  @media (max-width: 575.98px){
+    .hf-fab-stack{ right: 10px; bottom: 10px; gap: 6px; }
+    .hf-whatsapp-fab{ width:52px; height:52px }
+    .hf-floating-identity{ font-size:.86rem; padding:8px 12px }
+    .hf-flag{ width:20px }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .hf-fab-stack, .hf-whatsapp-fab, .hf-floating-identity{ animation: none !important }
+  }
+</style>
+
+
+
+<!-- =======================
+     About / Story Section
+======================= -->
+<section class="hf-about py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- Image -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="about-photo">
+            <img src="img/intro.jpeg" class="img-fluid rounded-3" alt="Custom dining room by HOUSEFUL">
+            <div class="about-badge">
+              <span class="bi bi-award-fill me-1"></span> Handcrafted in Sri Lanka
+            </div>
+          </div>
+        </div>
+  
+        <!-- Copy -->
+        <div class="col-lg-6 order-1 order-lg-2">
+          <p class="about-eyebrow mb-2">Ayubowan!</p>
+          <h2 class="about-title mb-3">Your Furniture Should Reflect Your Style of living</h2>
+          <p class="about-sub">
+            At HOUSEFUL, we believe every home deserves furniture that tells its own story.
+            Each of our creations is <strong>handcrafted with care</strong>, blending modern design with the
+            timeless craftsmanship of Moratuwa—Sri Lanka’s furniture capital.
+          </p>
+  
+          <!-- Key Benefits -->
+          <h2>Why Choose HOUSEFUL?</h2>
+          <ul class="about-list list-unstyled mb-3">
+            <li><i class="bi bi-check2-circle"></i> Free visits & Proposals - We’ll come to you and help bring your ideas to life</li>
+            <li><i class="bi bi-check2-circle"></i> 3D preview on request – Visualize your space before we begin</li>
+            <li><i class="bi bi-check2-circle"></i> Sustainably sourced timber - All materials are obtained from authorized suppliers and dealers</li>
+            <li><i class="bi bi-check2-circle"></i> Precision joinery & premium finishes - Built to last, designed to impress</li>
+            <li><i class="bi bi-check2-circle"></i> Clear timelines & on-time delivery - Professional installation, every time</li>
+          </ul>
+  
+          <!-- Stats -->
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-md-4">
+              <div class="about-stat">
+                <div class="val">400+</div>
+                <div class="label">Projects</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="about-stat">
+                <div class="val">4.5★</div>
+                <div class="label">Client Rating</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="about-stat">
+                <div class="val">37+ yrs</div>
+                <div class="label">Experience</div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- CTA -->
+          <div class="d-flex flex-wrap gap-2">
+            <a href="contact.html" class="btn btn-about-primary">
+              <i class="bi bi-chat-dots me-1"></i> Chat with us!
+            </a>
+            <a href="projects.html" class="btn btn-about-ghost">
+              <i class="bi bi-images me-1"></i> View Projects
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Process -->
+      <div class="about-process mt-5">
+        <div class="row g-3 g-lg-4">
+          <div class="col-12">
+            <h3 class="process-title">How We Work</h3>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="process-card">
+              <div class="icon"><i class="bi bi-people"></i></div>
+              <div class="name">Consult</div>
+              <p class="desc">Every masterpiece begins with a conversation. We take the time to understand your lifestyle, space, and
+                aspirations, ensuring every design is uniquely yours.</p>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="process-card">
+              <div class="icon"><i class="bi bi-rulers"></i></div>
+              <div class="name">Design</div>
+              <p class="desc">Our designers translate your vision into elegant concepts and immersive 3D previews, allowing you to
+                experience the beauty of your furniture before it’s crafted.</p>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="process-card">
+              <div class="icon"><i class="bi bi-hammer"></i></div>
+              <div class="name">Craft</div>
+              <p class="desc">Each piece is meticulously handcrafted by master artisans in Moratuwa, using only the finest, sustainably
+                sourced materials. Precision, perfection, and passion define our craftsmanship.</p>
+            </div>
+          </div>
+  
+          <div class="col-6 col-lg-3">
+            <div class="process-card">
+              <div class="icon"><i class="bi bi-truck"></i></div>
+              <div class="name">Deliver</div>
+              <p class="desc">Your bespoke creation is delivered and installed with the utmost professionalism and care, on time, every
+                time. All you need to do is step in and feel at home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* ===== About section polish ===== */
+:root{
+  --hf-indigo:#4c1d95;   /* deep indigo */
+  --hf-magenta:#a21caf;  /* brand magenta */
+  --hf-amber:#f59e0b;    /* warm accent */
+  --hf-ink:#1b1324;      /* dark text */
+}
+
+.hf-about .about-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .20em;
+  color: #6f4cff;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .hf-about .about-eyebrow {
+    font-size: 1.50rem;
+  }
+}
+
+.hf-about .about-title{
+  font-weight:800;
+  line-height:1.15;
+  color:var(--hf-ink);
+  font-size:clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+}
+.hf-about .about-sub{ color:#3f3a48; }
+
+/* Photo with floating badge */
+.hf-about .about-photo{
+  position:relative;
+  box-shadow:0 18px 42px rgba(0,0,0,.12);
+  border-radius:16px;
+  overflow:hidden;
+}
+.hf-about .about-photo img{ display:block; width:100%; height:auto; }
+.hf-about .about-badge{
+  position:absolute; bottom:14px; left:14px;
+  background:linear-gradient(135deg, var(--hf-indigo), var(--hf-magenta));
+  color:#fff; font-weight:700; font-size:.9rem;
+  padding:8px 12px; border-radius:999px;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+/* Feature list */
+.hf-about .about-list li{
+  display:flex; gap:10px; align-items:flex-start;
+  padding:8px 0; color:#2d2736;
+}
+.hf-about .about-list i{
+  color:var(--hf-amber); font-size:1.15rem; line-height:1.4;
+}
+
+/* Stats */
+.hf-about .about-stat{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:14px 12px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+.hf-about .about-stat .val{
+  font-weight:900; font-size:1.35rem; color:var(--hf-indigo);
+}
+.hf-about .about-stat .label{ color:#6b6476; font-size:.9rem; }
+
+/* Buttons */
+.hf-about .btn-about-primary{
+  background:linear-gradient(135deg, var(--hf-indigo), var(--hf-magenta));
+  color:#fff; border:0; font-weight:700; border-radius:10px; padding:10px 16px;
+  box-shadow:0 8px 20px rgba(76,29,149,.25);
+}
+.hf-about .btn-about-primary:hover{ filter:brightness(1.05); }
+.hf-about .btn-about-ghost{
+  background:transparent; color:var(--hf-ink); border:2px solid #e3dfff;
+  font-weight:700; border-radius:10px; padding:10px 16px;
+}
+.hf-about .btn-about-ghost:hover{ background:#f6f3ff; }
+
+/* Process */
+.hf-about .process-title{
+  font-weight:800; color:var(--hf-ink); margin-bottom:.75rem;
+}
+.hf-about .process-card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:14px;
+  padding:16px;
+  height:100%;
+  text-align:center;
+  box-shadow:0 8px 18px rgba(0,0,0,.06);
+  transition:transform .15s ease;
+}
+.hf-about .process-card:hover{ transform:translateY(-3px); }
+.hf-about .process-card .icon{
+  width:44px; height:44px; border-radius:10px; margin:0 auto 8px;
+  display:grid; place-items:center; color:#fff;
+  background:linear-gradient(135deg, var(--hf-indigo), var(--hf-magenta));
+}
+.hf-about .process-card .name{ font-weight:800; color:var(--hf-ink); }
+.hf-about .process-card .desc{ color:#615a6c; font-size:.95rem; margin:0; }
+
+/* Mobile refinements */
+@media (max-width: 575.98px){
+  .hf-about .about-badge{ font-size:.82rem; padding:7px 10px; }
+  .hf-about .about-list li{ padding:6px 0; }
+}
+
+  </style>
+
+  <!-- =======================
+     WHY CHOOSE US
+======================= -->
+<section id="why" class="container py-5">
+    <div class="text-center mb-4">
+      <p class="hf-kicker mb-2">Why Choose Us</p>
+      <h2 class="hf-title">Craftsmanship That Speaks for Itself - Every creation of ours is a celebration of artistry and
+        precision. Handcrafted by master craftsmen from Moratuwa, the heart of Sri Lanka’s furniture
+        heritage, our pieces embody timeless beauty and lasting quality.</h2>
+    </div>
+  
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="feature-card h-100 d-flex flex-column text-center p-4">
+          <div class="feature-icon mx-auto mb-3">
+            <i class="fa fa-tools"></i>
+          </div>
+          <h5 class="mb-2">Exceptional Craftsmanship</h5>
+          <p class="mb-0">
+            Each piece is meticulously handmade by skilled artisans using only the finest materials, where passion
+meets perfection.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="feature-card h-100 d-flex flex-column text-center p-4">
+          <div class="feature-icon mx-auto mb-3 green">
+            <i class="fa fa-leaf"></i>
+          </div>
+          <h5 class="mb-2">Sustainable Timber</h5>
+          <p class="mb-0">
+            We are committed to ethical practices, sourcing our timber exclusively from authorized permit holders to
+ensure responsible and eco-friendly production.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="feature-card h-100 d-flex flex-column text-center p-4">
+          <div class="feature-icon mx-auto mb-3 amber">
+            <i class="fa fa-couch"></i>
+          </div>
+          <h5 class="mb-2">Timeless Designs</h5>
+          <p class="mb-0">
+            Our furniture blends modern sophistication with the warmth of traditional design, creating pieces that
+transcend trends and elevate any space.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- =======================
+       FEATURED COLLECTIONS
+  ======================= -->
+  <section id="collections" class="container py-5">
+    <div class="text-center mb-4">
+      <p class="hf-kicker mb-2">Explore Our Collections</p>
+      <h2 class="hf-title">Furniture for Every Space, Crafted with Distinction</h2>
+    </div>
+  
+    <!-- Grid on desktop / swipe on mobile -->
+    <div class="row g-4 hf-snap">
+      <!-- Living Room -->
+      <div class="col-12 col-sm-6 col-lg-4 hf-snap-item">
+        <a href="household.html" class="collection-card" aria-label="View Living Room Collection">
+          <div class="ratio ratio-4x3">
+            <img src="img/house.jpg" alt="Living room furniture by HOUSEFUL"
+                 class="img-cover" loading="lazy">
+          </div>
+          <div class="collection-overlay">
+            <h5 class="mb-1">Household</h5>
+            <span class="view-link">Elevate your living, dining, and pantry spaces with furniture that embodies elegance, warmth, and
+              timeless character. Crafted to make every corner of your home feel uniquely yours.</span>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Dining Room -->
+      <div class="col-12 col-sm-6 col-lg-4 hf-snap-item">
+        <a href="corporate.html" class="collection-card" aria-label="View Dining Room Collection">
+          <div class="ratio ratio-4x3">
+            <img src="img/corporate.jpg" alt="Dining room furniture by HOUSEFUL"
+                 class="img-cover" loading="lazy">
+          </div>
+          <div class="collection-overlay">
+            <h5 class="mb-1">Corporate</h5>
+            <span class="view-link">From offices to hotels and cafés, our designs combine sophistication, strength, and everyday functionality.
+              Crafted to inspire productivity and style in equal measure. </span>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Bedroom -->
+      <div class="col-12 col-sm-6 col-lg-4 hf-snap-item">
+        <a href="Decorative.html" class="collection-card" aria-label="View Bedroom Collection">
+          <div class="ratio ratio-4x3">
+            <img src="projects/d10.jpg" alt="Bedroom furniture by HOUSEFUL"
+                 class="img-cover" loading="lazy">
+          </div>
+          <div class="collection-overlay">
+            <h5 class="mb-1">Decorative items</h5>
+            <span class="view-link">Old goods reborn, where the past meets the present. We breathe new life into reclaimed materials,
+              transforming them into exquisite furniture and artistic décor, each piece with a story to tell.</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Brand-ish variables (tweak to match your palette) */
+:root{
+  --hf-indigo:#4c1d95;
+  --hf-violet:#6a1fb7;
+  --hf-green:#2e7d32;
+  --hf-amber:#f59e0b;
+  --hf-ink:#1b1324;
+  --hf-soft:#f6f3ff;
+}
+
+/* Section headers */
+.hf-kicker{
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--hf-violet);
+  font-size:.9rem;
+}
+.hf-title{
+  font-weight:800;
+  color:var(--hf-ink);
+  font-size:clamp(1.4rem, 1rem + 2vw, 2.25rem);
+}
+
+/* ===== Why Choose Us cards ===== */
+.feature-card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:14px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.feature-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 32px rgba(0,0,0,.10);
+}
+.feature-icon{
+  width:64px; height:64px;
+  border-radius:14px;
+  display:grid; place-items:center;
+  color:#fff; background:linear-gradient(135deg, var(--hf-indigo), var(--hf-violet));
+  font-size:1.5rem;
+  box-shadow:0 8px 18px rgba(106,31,183,.25);
+}
+.feature-icon.green{ background:linear-gradient(135deg, #1b5e20, var(--hf-green)); }
+.feature-icon.amber{ background:linear-gradient(135deg, #b45309, var(--hf-amber)); }
+
+/* ===== Collections ===== */
+.collection-card{
+  display:block;
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid #eee;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  transition:transform .18s ease, box-shadow .18s ease;
+  background:#fff;
+  text-decoration:none;
+}
+.collection-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 32px rgba(0,0,0,.10);
+}
+.img-cover{
+  width:100%; height:100%;
+  object-fit:cover; border:0;
+  border-radius:0; display:block;
+}
+
+/* Overlay text — visibility fix only */
+.collection-overlay{
+  position:absolute; inset:auto 0 0 0;
+  padding:14px 16px;
+  /* Stronger gradient for better contrast */
+  background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,.78) 100%);
+  color:#fff;
+}
+.collection-overlay h5{
+  font-weight:800; margin:0; color:#fff;
+  /* Makes heading readable on bright images */
+  text-shadow:0 2px 6px rgba(0,0,0,.8);
+}
+.collection-overlay .view-link{
+  font-weight:600; font-size:.95rem; opacity:.95;
+  line-height:1.35;
+  /* Subtle shadow to lift body text */
+  text-shadow:0 1px 4px rgba(0,0,0,.75);
+}
+
+/* ===== Mobile swipe (no JS) ===== */
+/* On small screens, allow horizontal swipe with snap */
+@media (max-width: 575.98px){
+  .hf-snap{
+    display:flex;
+    overflow-x:auto;
+    gap:1rem;
+    scroll-snap-type:x mandatory;
+    padding-bottom:.25rem;
+  }
+  .hf-snap::-webkit-scrollbar{ display:none; } /* hide scrollbar (webkit) */
+  .hf-snap-item{
+    min-width:85%;
+    scroll-snap-align:center;
+  }
+}
+
+  </style>
+<!-- =======================
+     Call to Action (Section)
+======================= -->
+<section class="hf-cta2">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- Left: Message + bullets -->
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Custom • Handcrafted • Sustainable</p>
+          <h2 class="cta-title">
+            Ready to Create Your Dream Space?
+          </h2>
+          <p class="cta-sub">
+            We design and craft bespoke furniture that reflects your lifestyle, made to fit your style, space, and
+budget. Every piece is handcrafted in Sri Lanka by master artisans who blend tradition with contemporary
+design excellence.
+          </p>
+  
+          <ul class="cta-points">
+            <li><span>✔</span> Free Visits & Proposals – We listen, advise, and design with you.</li>
+            <li><span>✔</span> Premium, Sustainably Sourced Timber – Ethically obtained. Solid, and beautifully finished.</li>
+            <li><span>✔</span> Transparent Timelines & On-Time Delivery – Precision and professionalism, from start to
+              finish.</li>
+          </ul>
+  
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-cta">Get a Quote</a>
+            <a href="tel:+94777317598" class="btn btn-ghost">Call +94 777 317 598</a>
+          </div>
+  
+          <div class="cta-safe mt-3">
+            <span class="dot"></span> No obligation. No hidden charges. Only genuine craftsmanship.
+          </div>
+        </div>
+  
+        <!-- Right: Trust / Stats -->
+        <div class="col-lg-5">
+          <div class="trust-wrap">
+            <div class="trust-card">
+              <div class="trust-val">400+</div>
+              <div class="trust-label">Projects Completed</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-val">4.5★</div>
+              <div class="trust-label">Client Rating at an average</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-val">37+</div>
+              <div class="trust-label">Years of Craftsmanship Excellence</div>
+            </div>
+            <div class="trust-note">
+              From elegant living rooms to bespoke kitchens, every piece we create is built to last, and tailored
+exclusively to you.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* ===== NEW CTA Color System ===== */
+    :root{
+      --hf-indigo:#4c1d95;   /* deep indigo */
+      --hf-magenta:#a21caf;  /* rich magenta */
+      --hf-amber:#f59e0b;    /* warm amber accent */
+      --hf-soft:#f8f5ff;     /* very light bg text tone */
+    }
+  
+    /* ===== CTA Section ===== */
+    .hf-cta2{
+      position: relative;
+      padding: 72px 0;
+      background: linear-gradient(135deg, var(--hf-indigo) 0%, var(--hf-magenta) 100%);
+      color:#fff;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 56px;
+    }
+    /* soft light flare */
+    .hf-cta2::before{
+      content:"";
+      position:absolute; inset:-30% -10% auto auto;
+      width:60%; height:140%;
+      background: radial-gradient(closest-side, rgba(255,255,255,.18), transparent 60%);
+      transform: rotate(-15deg);
+    }
+  
+    .hf-cta2 .eyebrow{
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:#e9d8ff;
+      font-weight:700;
+      font-size:.85rem;
+    }
+    .hf-cta2 .cta-title{
+      color:#fff;
+      font-weight:800;
+      line-height:1.15;
+      margin:4px 0 10px;
+      font-size:clamp(1.8rem, 2.4vw + 1rem, 2.6rem);
+    }
+    .hf-cta2 .cta-sub{
+      color:#f4edff;
+      font-size:1.05rem;
+      margin-bottom:18px;
+    }
+  
+    .hf-cta2 .cta-points{
+      list-style:none; padding:0; margin:0 0 18px;
+      display:grid; gap:8px;
+    }
+    .hf-cta2 .cta-points li{
+      display:flex; align-items:flex-start; gap:10px;
+      background: rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.15);
+      padding:10px 12px; border-radius:10px;
+    }
+    .hf-cta2 .cta-points li span{
+      color:var(--hf-amber); font-weight:800; line-height:1.1;
+    }
+  
+    .hf-cta2 .cta-actions { display:flex; flex-wrap:wrap; gap:12px; }
+  
+    .hf-cta2 .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 18px; border-radius:10px; font-weight:700;
+      text-decoration:none; transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
+      border:0;
+    }
+    .hf-cta2 .btn-cta{
+      color:#1d0b2c;
+      background:#fff;
+      box-shadow:0 6px 18px rgba(0,0,0,.18);
+    }
+    .hf-cta2 .btn-cta:hover{ transform: translateY(-2px); }
+    .hf-cta2 .btn-ghost{
+      color:#fff; border:2px solid rgba(255,255,255,.5); background:transparent;
+    }
+    .hf-cta2 .btn-ghost:hover{
+      background:rgba(255,255,255,.12);
+      border-color:#fff;
+    }
+  
+    .hf-cta2 .cta-safe{
+      display:flex; align-items:center; gap:8px; color:#f0e9ff;
+      font-size:.95rem;
+    }
+    .hf-cta2 .cta-safe .dot{
+      width:8px; height:8px; border-radius:50%; background:var(--hf-amber); display:inline-block;
+    }
+  
+    /* ===== Trust Cards ===== */
+    .hf-cta2 .trust-wrap{
+      display:grid; grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+    .hf-cta2 .trust-card{
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:14px; padding:16px;
+      backdrop-filter: blur(2px);
+    }
+    .hf-cta2 .trust-val{
+      font-size:1.6rem; font-weight:900; line-height:1; color:#fff;
+    }
+    .hf-cta2 .trust-label{
+      color:#f3eaff; opacity:.95; margin-top:6px;
+    }
+    .hf-cta2 .trust-note{
+      grid-column:1/-1;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:14px; padding:14px;
+      color:#f8f5ff;
+    }
+  
+    /* ===== Responsive tweaks ===== */
+    @media (max-width: 991.98px){
+      .hf-cta2{ padding: 60px 0; }
+    }
+    @media (max-width: 575.98px){
+      .hf-cta2{ padding: 44px 0; border-radius: 12px; }
+      .hf-cta2 .cta-actions .btn{ width:100%; }
+      .hf-cta2 .trust-wrap{ grid-template-columns:1fr; }
+    }
+  </style>
+  
+  
+<!-- Owl CSS (HEAD) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- =======================
+     Client Reviews (Slider)
+======================= -->
+<section class="container py-5" id="reviews">
+  <div class="text-center mb-5">
+    <h4 class="section-title">What Our Clients Say</h4>
+    <h2 class="fw-bold">Hear From Our Happy Customers</h2>
+  </div>
+
+  <div class="owl-carousel review-slider">
+    <!-- 1 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">RM</div>
+      <h5 class="fw-bold mb-1">Roshan Mahanama</h5>
+      <p class="text-muted small mb-2">Colombo</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“The craftsmanship and detail exceeded my expectations. My living room has never looked this elegant!”</p>
+    </div>
+    <!-- 2 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">GO</div>
+      <h5 class="fw-bold mb-1">Gerard Ondaatje</h5>
+      <p class="text-muted small mb-2">Negombo</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“Brilliant quality and timely delivery. Truly custom work with a personal touch!”</p>
+    </div>
+    <!-- 3 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">NP</div>
+      <h5 class="fw-bold mb-1">Nuwani Perera</h5>
+      <p class="text-muted small mb-2">Kandy</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“Their designs bring warmth and class into every corner of my home. Highly recommended!”</p>
+    </div>
+    <!-- 4 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">DK</div>
+      <h5 class="fw-bold mb-1">Dilshan Kariyawasam</h5>
+      <p class="text-muted small mb-2">Maharagama</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“From concept to installation, the team handled everything perfectly.”</p>
+    </div>
+    <!-- 5 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">SR</div>
+      <h5 class="fw-bold mb-1">Shalini Rodrigo</h5>
+      <p class="text-muted small mb-2">Dehiwala</p>
+      <div class="review-stars">★★★★☆</div>
+      <p class="fst-italic mt-2">“Beautiful bedroom set—solid build and lovely finishing.”</p>
+    </div>
+    <!-- 6 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">AH</div>
+      <h5 class="fw-bold mb-1">Akeel Hussain</h5>
+      <p class="text-muted small mb-2">Mount Lavinia</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“The custom dining table became the heart of our home. Thank you HOUSEFUL!”</p>
+    </div>
+    <!-- 7 -->
+    <div class="review-box text-center p-4 shadow-sm rounded">
+      <div class="review-avatar">TM</div>
+      <h5 class="fw-bold mb-1">Tharushi Madushani</h5>
+      <p class="text-muted small mb-2">Nugegoda</p>
+      <div class="review-stars">★★★★★</div>
+      <p class="fst-italic mt-2">“Professional team, great communication, and stunning results.”</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Make sure it's visible pre-init */
+.owl-carousel { display:block }
+
+/* ===== User-friendly polish for Reviews slider ===== */
+
+/* Make the whole slider a proper positioning context */
+.review-slider {
+  position: relative;
+  padding: 0 48px;                 /* room for arrows inside on desktop */
+}
+
+/* Keep equal height cards */
+.review-slider .owl-stage { display: flex; }
+.review-slider .owl-item  { display: flex; }
+.review-slider .review-box { width: 100%; height: 100%; }
+
+/* Dots — larger and easier to tap */
+.review-slider .owl-dots { text-align: center; margin-top: 18px; }
+.review-slider .owl-dot span{
+  width: 12px; height: 12px; margin: 5px;
+  display: inline-block; border-radius: 50%;
+  background: #d9ccff; transition: .25s;
+}
+.review-slider .owl-dot.active span{
+  background: #6a1fb7; transform: scale(1.2);
+}
+.review-slider .owl-dot:focus-visible span{
+  outline: 2px solid #6a1fb7; outline-offset: 2px;
+}
+
+/* Arrows container centered vertically */
+.review-slider .owl-nav {
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;            /* let only buttons receive events */
+}
+
+/* Arrow buttons (big, comfy) */
+.review-slider .owl-nav button {
+  position: absolute;
+  pointer-events: auto;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #f2eaff !important;
+  color: #6a1fb7 !important;
+  font-size: 22px; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .2s, background .2s;
+}
+.review-slider .owl-nav .owl-prev { left: 8px; }
+.review-slider .owl-nav .owl-next { right: 8px; }
+
+.review-slider .owl-nav button:hover,
+.review-slider .owl-nav button:focus-visible{
+  background: #e7dcff !important;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Hide arrows when disabled (at ends if loop = false) */
+.review-slider .owl-nav button.disabled { opacity: .35; pointer-events: none; }
+
+/* Cards polish (optional; keep your colors) */
+.review-box{
+  background:#fff; border:1px solid #eee; transition:.3s;
+}
+.review-box:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.07);
+}
+
+/* Mobile: bring arrows further inside and enlarge tap area */
+@media (max-width: 575.98px){
+  .review-slider { padding: 0 36px; }
+  .review-slider .owl-nav button { width: 48px; height: 48px; font-size: 24px; }
+  .review-slider .owl-nav .owl-prev { left: 4px; }
+  .review-slider .owl-nav .owl-next { right: 4px; }
+}
+
+</style>
+
+<!-- JS (load jQuery ONCE, then Owl) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+
+    // Keyboard support for focused/nearby carousel
+document.addEventListener('keydown', function(e){
+  const slider = document.querySelector('.review-slider');
+  if (!slider) return;
+
+  // If the slider is on screen, let arrow keys navigate
+  const rect = slider.getBoundingClientRect();
+  const onScreen = rect.bottom > 0 && rect.top < window.innerHeight;
+  if (!onScreen) return;
+
+  if (e.key === 'ArrowLeft') {
+    $(slider).trigger('prev.owl.carousel');
+  } else if (e.key === 'ArrowRight') {
+    $(slider).trigger('next.owl.carousel');
+  }
+});
+
+
+$('.review-slider').owlCarousel({
+  items: 3,
+  margin: 24,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 3500,
+  autoplayHoverPause: true,
+  smartSpeed: 700,
+  dots: true,
+  nav: true,
+  navText: ['&#8249;','&#8250;'], // ‹ ›
+  responsive:{
+    0:   { items: 1, margin: 16 },
+    576: { items: 1, margin: 20 },
+    768: { items: 2, margin: 20 },
+    992: { items: 3, margin: 24 }
+  }
+});
+
+</script>
+
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="hf-footer container-fluid px-0">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Brand / About -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="logo.png" alt="HOUSEFUL" class="logo me-2">
+            <div class="fw-bold fs-5">HOUSEFUL</div>
+          </div>
+          <p class="mb-2">We make your house a home. Custom-made furniture crafted in Sri Lanka.</p>
+          <div class="social mt-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-2">
+          <div class="title">Quick Links</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Collections -->
+        <div class="col-6 col-md-3">
+          <div class="title">Collections</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-3">
+          <div class="title">Contact</div>
+          <ul class="list-unstyled mb-3">
+            <li><i class="fa fa-map-marker-alt me-2"></i>93/4 Weera Uditha Mawatha, Hadigama, Piliyandala</li>
+            <li><a href="tel:+94777317598"><i class="fa fa-phone-alt me-2"></i>+94 777 317 598</a></li>
+            <li><a href="mailto:mevancadesilva@gmail.com"><i class="fa fa-envelope me-2"></i>mevancadesilva@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hf-copy text-center">
+      © 2025 HOUSEFUL Custom-Made Furniture · Designed by Quantum Leap Solutions
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+
+<style>
+  /* ---- HOUSEFUL Footer ---- */
+.hf-footer {
+  background: linear-gradient(90deg, #240046 0%, #5A189A 100%);
+  color: #fff;
+  border-radius: 14px 14px 0 0;
+  margin-top: 60px;
+}
+
+.hf-footer a {
+  color: #E9D8FD;
+  text-decoration: none;
+}
+.hf-footer a:hover { color: #ffffff; text-decoration: underline; }
+
+.hf-footer .title {
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 1rem;
+}
+
+.hf-footer .logo {
+  height: 46px;
+  width: auto;
+}
+
+.hf-footer .social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(255,255,255,.1);
+  margin-right: .4rem;
+}
+.hf-footer .social a:hover { background: rgba(255,255,255,.2); }
+
+.hf-copy {
+  background:#1e1e1e; color:#cfcfcf; font-size:.95rem;
+  padding: .9rem 0;
+}
+</style>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $('.header-carousel').owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      items: 1,
+      dots: true,
+      loop: true
+    });
+  </script>
+</body>
+</html>
